@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
+      <nav class="main-header-navigation">
         <a class="main-header-logo" href="index.html">
           <img src="http://placehold.it/120x100" alt="Логотип студии Нёрдс">
         </a>
@@ -26,21 +26,13 @@
       <nav class="catalog-sorting">
         <h2>Сортировать:</h2>
         <div class="sorting">
-          <input type="button" id="btn-1" name="toggle" value="ПО ЦЕНЕ" checked>
-          <input type="button" id="btn-2" name="toggle" value="ПО ТИПУ">
-          <input type="button" id="btn-3" name="toggle" value="ПО НАЗВАНИЮ">
-          <div class="sorting-controls">
-            <label for="btn-1"></label>
-            <label for="btn-2"></label>
-            <label for="btn-3"></label>
-          </div>
+          <button >ПО ЦЕНЕ</button>
+          <button>ПО ТИПУ</button>
+          <button>ПО НАЗВАНИЮ</button>
+
           <div>
-            <input type="button" id="btn-4" name="arrow" checked>
-            <input type="button" id="btn-5" name="arrow" >
-            <div class="sorting-controls">
-              <label for="btn-4"></label>
-              <label for="btn-5"></label>
-            </div>
+            <button >вверх</button>
+            <button>вниз</button>
           </div>
         </div>
         <div class="catalog-slider">
@@ -50,45 +42,74 @@
                   <div class="templates">
                     <img src="http://placehold.it/120x100" alt="sedona">
                   </div>
+                  <div class="visually-hidden">
+                    <h3 class="catalog-item">SEDONA</h3>
+                    <p>Информационный сайт для туристов</p>
+                    <button>9 900 РУБ.</button>
+                  </div>
 
                   <div class="templates">
                     <img src="http://placehold.it/120x100" alt="pink">
                   </div>
-
+                  <div class="visually-hidden">
+                    <h3 class="catalog-item">PINK</h3>
+                    <p>Ещё сайт</p>
+                    <button>9 900 РУБ.</button>
+                  </div>
                   <div class="templates">
                     <img src="http://placehold.it/120x100" alt="borodinski">
+                  </div>
+                  <div class="visually-hidden">
+                    <h3 class="catalog-item">BORODINSKI</h3>
+                    <p>Ещё сайт</p>
+                    <button>9 900 РУБ.</button>
                   </div>
                   <div class="templates">
                     <img src="http://placehold.it/120x100" alt="mishka">
                   </div>
-
+                  <div class="visually-hidden">
+                    <h3 class="catalog-item">MISHKA</h3>
+                    <p>Ещё сайт</p>
+                    <button>9 900 РУБ.</button>
+                  </div>
                   <div class="templates">
                     <img src="http://placehold.it/120x100" alt="A+">
                   </div>
-
+                  <div class="visually-hidden">
+                    <h3 class="catalog-item">A+</h3>
+                    <p>Ещё сайт</p>
+                    <button>9 900 РУБ.</button>
+                  </div>
                   <div class="templates">
                     <img src="http://placehold.it/120x100" alt="kvast">
                   </div>
-
+                  <div class="visually-hidden">
+                    <h3 class="catalog-item">KVAST</h3>
+                    <p>Ещё сайт</p>
+                    <button>9 900 РУБ.</button>
+                  </div>
                 </div>
             </div>
-            <input type="button" id="btn-6" name="number" value="1" checked>
-            <input type="button" id="btn-7" name="number" value="2">
-            <input type="button" id="btn-8" name="number" value="3">
-            <input type="button" id="btn-9" name="next" value="СЛЕДУЮЩАЯ">
-            <div class="slider-controls">
-                <label for="btn-6"></label>
-                <label for="btn-7"></label>
-                <label for="btn-8"></label>
-                <label for="btn-9"></label>
-            </div>
+            <nav class="main-navigation">
+              <button >1</button>
+              <button>2</button>
+              <button>3</button>
+              <button >СЛЕДУЮЩАЯ</button>
+            </nav>
+
         </div>
       </nav>
     </main>
     <footer class="main-footer">
-      <a class="main-footer-map">
-        <img src="http://placehold.it/120x100" alt="Где мы находимся">
-      </a>
+      <form class="main-footer-adress">
+        <h3>NЁRDS DESIGN STUDIO</h3>
+        <p>191186, Санкт-Петербург<br>
+        ул. Б. Конюшенная, д. 19/8<br><br>
+        тел. +7(812) 275-75-75</p>
+        <button>НАПИШИТЕ НАМ</button>
+      </form>
+      <img src="http://placehold.it/120x100" alt="Где мы находимся">
+
       <div class="footer-social">
         <ul>
           <li><a class="social-button" href="#">Вконтакте</a></li>
