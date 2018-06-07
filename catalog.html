@@ -106,17 +106,31 @@
         тел. +7(812) 275-75-75</p>
         <button>НАПИШИТЕ НАМ</button>
       </form>
+      <form class="visually-hidden">
+        <p class="write-us">НАПИШИТЕ НАМ</p>
+        <label for="name-field">Ваше имя:</label>
+        <input type="text" id="name-field" name="name" value="Имя Фамилия">
+        <label for="email-field">Ваш e-mail:</label>
+        <input type="text" id="email-field" name="name" value="email@example.com">
+        <label for="comment-field">Текст письма:</label>
+        <textarea name="comment" id="comment-field" rows="10">В свободной форме</textarea>
+        <button>ОТПРАВИТЬ</button>
+      </form>
       <img src="img/footer-map.jpg" alt="Где мы находимся">
 
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#"><img src="img/vk-icon.svg" width="50" height="50" alt="Вконтакте"></a></li>
-          <li><a class="social-button" href="#"><img src="img/fb-icon.svg" width="50" height="50" alt="Facebook"></a></li>
-          <li><a class="social-button" href="#"><img src="img/insta-icon.svg" width="50" height="50" alt="Instagram"></a></li>
-        </ul>
-        <p class="footer-title">Давайте дружить, это выгодно</p>
-        <p>Скидка 10% для друзей из социальных сетей</p>
-      </div>
+      <ul class="footer-social">
+        <li class="social-item">
+          <a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a>
+        </li>
+        <li class="social-item">
+          <a class="social-button" href="#"><span class="visually-hidden">Facebook</span></a>
+        </li>
+        <li class="social-item">
+          <a class="social-button" href="#"><span class="visually-hidden">Instagram</span></a>
+        </li>
+      </ul>
+      <p class="footer-title">Давайте дружить, это выгодно</p>
+      <p>Скидка 10% для друзей из социальных сетей</p>
     </footer>
     </body>
   </html>
