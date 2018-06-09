@@ -42,22 +42,31 @@
           </label>
           <h2>Сетка:</h2>
           <label>
-            <input type="radio" name="radio" checked> Адаптивная
+            <input type="radio" name="layout" checked> Адаптивная
           </label>
           <label>
-            <input type="radio" name="radio"> Фиксированная
+            <input type="radio" name="layout"> Фиксированная
           </label>
           <label>
-            <input type="radio" name="radio"> Резиновая
+            <input type="radio" name="layout"> Резиновая
           </label>
           <h2>Особенности:</h2>
-          <select name="features" multiple size="5">
-                <option selected>Слайдер</option>
-                <option>Блок преимуществ</option>
-                <option selected>Новости</option>
-                <option>Галерея</option>
-                <option>Корзина</option>
-          </select>
+          <label>
+            <input type="checkbox" name="features" checked> Слайдер
+          </label>
+          <label>
+            <input type="checkbox" name="features" > Блок преимуществ
+          </label>
+          <label>
+            <input type="checkbox" name="features" checked> Новости
+          </label>
+          <label>
+            <input type="checkbox" name="features" > Галерея
+          </label>
+          <label>
+            <input type="checkbox" name="features" > Корзина
+          </label>
+
           <button type="submit">ПОКАЗАТЬ</button>
         </form>
 
@@ -144,16 +153,7 @@
         тел. +7(812) 275-75-75</p>
         <button>НАПИШИТЕ НАМ</button>
       </div>
-      <form class="visually-hidden">
-        <p class="write-us">НАПИШИТЕ НАМ</p>
-        <label for="name-field">Ваше имя:</label>
-        <input type="text" id="name-field" name="name" value="Имя Фамилия">
-        <label for="email-field">Ваш e-mail:</label>
-        <input type="text" id="email-field" name="name" value="email@example.com">
-        <label for="comment-field">Текст письма:</label>
-        <textarea name="comment" id="comment-field" rows="10">В свободной форме</textarea>
-        <button>ОТПРАВИТЬ</button>
-      </form>
+
       <img src="img/footer-map.jpg" alt="Где мы находимся">
 
       <ul class="footer-social">
@@ -170,5 +170,15 @@
       <p class="footer-title">Давайте дружить, это выгодно</p>
       <p>Скидка 10% для друзей из социальных сетей</p>
     </footer>
+    <div class="visually-hidden">
+      <p class="write-us">НАПИШИТЕ НАМ</p>
+      <label for="name-field">Ваше имя:</label>
+      <input type="text" id="name-field" name="name" value="Имя Фамилия">
+      <label for="email-field">Ваш e-mail:</label>
+      <input type="text" id="email-field" name="name" value="email@example.com">
+      <label for="comment-field">Текст письма:</label>
+      <textarea name="comment" id="comment-field" rows="10">В свободной форме</textarea>
+      <button>ОТПРАВИТЬ</button>
+    </div>
     </body>
   </html>
