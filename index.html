@@ -148,14 +148,17 @@
       <p>Скидка 10% для друзей из социальных сетей</p>
     </footer>
     <div class="visually-hidden">
-      <p class="write-us">НАПИШИТЕ НАМ</p>
-      <label for="name-field">Ваше имя:</label>
-      <input type="text" id="name-field" name="name" value="Имя Фамилия">
-      <label for="email-field">Ваш e-mail:</label>
-      <input type="text" id="email-field" name="name" value="email@example.com">
-      <label for="comment-field">Текст письма:</label>
-      <textarea name="comment" id="comment-field" rows="10">В свободной форме</textarea>
-      <button>ОТПРАВИТЬ</button>
+      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+      <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
+        <p class="write-us">НАПИШИТЕ НАМ</p>
+        <label for="name-field">Ваше имя:</label>
+        <input type="text" id="name-field" name="name" value="Имя Фамилия">
+        <label for="email-field">Ваш e-mail:</label>
+        <input type="text" id="email-field" name="name" value="email@example.com">
+        <label for="comment-field">Текст письма:</label>
+        <textarea name="comment" id="comment-field" rows="10">В свободной форме</textarea>
+        <button>ОТПРАВИТЬ</button>
+      </form>
     </div>
   </body>
 </html>
