@@ -35,12 +35,14 @@ a {
   color: #000000;
 }
 
+/* тут застрял
 .main-header-navigation a:focus{
   color: #a9a9a9;
 }
 a.main-header-logo:hover{
   background-image: url("img/nerds-logo-hover.svg");
 }
+*/
 .site-navigation a:hover,
 .user-navigation a:hover{
   color: #fb565a;
