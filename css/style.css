@@ -35,14 +35,14 @@ a {
   color: #000000;
 }
 
-/* тут застрял
-.main-header-navigation a:focus{
-  color: #a9a9a9;
+.logo a:hover {
+  opacity: 0.6;
 }
-a.main-header-logo:hover{
-  background-image: url("img/nerds-logo-hover.svg");
+
+.logo a:active {
+  opacity: 0.3;
 }
-*/
+
 .site-navigation a:hover,
 .user-navigation a:hover{
   color: #fb565a;
@@ -51,4 +51,111 @@ a.main-header-logo:hover{
 .site-navigation a:focus,
 .user-navigation a:focus {
   color: #a9a9a9;
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+  color: #000000;
+  border-bottom: 1px solid #e74246;
+}
+
+.slider {
+  background-color: #eeeeee;
+}
+
+.button{
+  /* font: inherit; */
+
+  text-align: center;
+  vertical-align: middle;
+  /*text-transform: uppercase;
+  color: #ffffff;
+  background-color: #000000; */
+  border: none;
+}
+
+.seemore{
+  color: #ffffff;
+  background-color: #fb565a;
+}
+
+.seemore:hover{
+  background-color: #e74246;
+}
+
+.seemore:focus{
+  color: #e4babb;
+  background-color: #d7373b;
+}
+
+.order-red{
+  color: #ffffff;
+  background-color: #fb565a;
+}
+
+.order-red:hover{
+  color: #ffffff;
+  background-color: #e74246;
+}
+
+.order-red:focus{
+  color: #e4babb;
+  background-color: #d7373b;
+}
+
+.order-green{
+  color: #ffffff;
+  background-color: #00ca74;
+}
+
+.order-green:hover{
+  color: #ffffff;
+  background-color: #00bc6c;
+}
+
+.order-green:focus{
+  color: #e4babb;
+  background-color: #00aa62;
+}
+
+.order-yellow{
+  color: #ffffff;
+  background-color: #efc84a;
+}
+
+.order-yellow:hover{
+  color: #ffffff;
+  background-color: #eab534;
+}
+
+.order-yellow:focus{
+  color: #e4babb;
+  background-color: #e5a722;
+}
+
+.partners a{
+  opacity: 0.6;
+}
+
+.partners a:hover{
+  opacity: 1;
+}
+
+.partners a:focus{
+  opacity: 0.3;
+}
+
+.form-write-us input,
+.form-write-us textarea{
+  opacity: 0.3;
+}
+
+.form-write-us input:hover,
+.form-write-us textarea:hover{
+  opacity: 0.6;
+}
+
+.form-write-us input:focus,
+.form-write-us textarea:focus{
+  opacity: 1;
 }

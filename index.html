@@ -10,9 +10,11 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/nerds-logo.svg" width="100" height="50" alt="Нёрдс">
-        </a>
+        <div class="logo">
+          <a class="main-header-logo">
+            <img src="img/nerds-logo.svg" width="100" height="50" alt="Нёрдс">
+          </a>
+        </div>
         <ul class="site-navigation">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
@@ -26,9 +28,9 @@
     </header>
     <main class="container">
 
-      <section>
+      <section class="slider">
            <h1 class="visually-hidden">Студия «Нёрдс»</h1>
-           <div class="slider">
+
                <input type="radio" id="btn-1" name="toggle" checked>
                <input type="radio" id="btn-2" name="toggle">
                <input type="radio" id="btn-3" name="toggle">
@@ -43,26 +45,26 @@
                        <p class="features-title">Долго, дорого, скрупулезно</p>
                        <p>  Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
                        <img src="img/slide1.png" alt="">
-                       <button>УЗНАТЬ БОЛЬШЕ</button>
+                       <button class="button seemore">УЗНАТЬ БОЛЬШЕ</button>
                      </div>
 
                      <div class="features">
                        <p class="features-title">Любим математику как никто другой</p>
                        <p>  Никакого креатива, только математические формулы для расчета пропорций.</p>
                        <img src="img/slide2.png" alt="">
-                       <button>УЗНАТЬ БОЛЬШЕ</button>
+                       <button class="button seemore">УЗНАТЬ БОЛЬШЕ</button>
                      </div>
 
                      <div class="features">
                        <p class="features-title">Только ночь, только хардкор</p>
                        <p>  Работать днем, Как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
                        <img src="img/slide3.png" alt="">
-                       <button>УЗНАТЬ БОЛЬШЕ</button>
+                       <button class="button seemore">УЗНАТЬ БОЛЬШЕ</button>
                      </div>
 
                    </div>
                </div>
-           </div>
+
        </section>
 
       <section class="service">
@@ -70,17 +72,17 @@
         <img src="img/illustration-1.png" alt="">
         <h3 class="service-item">Веб-сайты</h3>
         <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-        <button>ЗАКАЗАТЬ</button>
+        <button class="button order-red">ЗАКАЗАТЬ</button>
 
         <img src="img/illustration-2.png" alt="">
         <h3 class="service-item">Приложения</h3>
         <p>Покорите топ-10 приложений в AppStore и Coogle Play</p>
-        <button>ЗАКАЗАТЬ</button>
+        <button class="button order-green">ЗАКАЗАТЬ</button>
 
         <img src="img/illustration-3.png" alt="">
         <h3 class="service-item">Презентации</h3>
         <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-        <button>ЗАКАЗАТЬ</button>
+        <button class="button order-yellow">ЗАКАЗАТЬ</button>
       </section>
 
       <section class="about">
@@ -131,7 +133,7 @@
         <p>191186, Санкт-Петербург<br>
         ул. Б. Конюшенная, д. 19/8<br><br>
         тел. +7(812) 275-75-75</p>
-        <button>НАПИШИТЕ НАМ</button>
+        <button class="button">НАПИШИТЕ НАМ</button>
       </div>
 
       <img src="img/footer-map.jpg" alt="Где мы находимся">
@@ -160,7 +162,7 @@
         <input type="text" id="email-field" name="name" value="email@example.com">
         <label for="comment-field">Текст письма:</label>
         <textarea name="comment" id="comment-field" rows="10">В свободной форме</textarea>
-        <button>ОТПРАВИТЬ</button>
+        <button class="button">ОТПРАВИТЬ</button>
       </form>
     </div>
   </body>
