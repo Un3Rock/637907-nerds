@@ -148,17 +148,93 @@ a {
   opacity: 0.3;
 }
 
+.sorting button{
+ background-color: none;
+}
+
+
 .form-write-us input,
-.form-write-us textarea{
+.form-write-us textarea,
+.sorting button{
   opacity: 0.3;
 }
 
 .form-write-us input:hover,
-.form-write-us textarea:hover{
+.form-write-us textarea:hover,
+.sorting button:hover{
   opacity: 0.6;
 }
 
 .form-write-us input:active,
-.form-write-us textarea:active{
+.form-write-us textarea:active,
+.sorting button:active{
   opacity: 1;
+}
+
+.show,
+.catalog-navigation button{
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.show:hover,
+.catalog-navigation button:hover{
+  background-color: #dfdfdf;
+}
+
+.show:active,
+.catalog-navigation button:active{
+  color: #959595;
+  background-color: #d5d5d5;
+  box-shadow: inset 0 2px 0 0 #bfbfbf;
+}
+
+button.catalog-active{
+  background-color: white !important;
+  border: 1px solid #eeeeee;
+}
+
+.modal-close{
+  color:red;
+  opacity: 0.6;
+}
+
+.modal-close:hover{
+  opacity: 1;
+}
+
+.modal-close:active{
+  opacity: 0.3;
+}
+.grid{
+  opacity: 0.6;
+}
+
+.grid:hover{
+  opacity: 1;
+}
+
+.price{
+  color: #ffffff;
+  background-color: #fb565a;
+}
+
+.price:hover{
+  background-color: #e74246;
+}
+
+.price:active{
+  background-color: #d7373b;
+}
+
+.info{
+  background-color: #eeeeee;
+}
+
+.info:hover{
+
+}
+
+.templates:hover{
+  box-shadow:  0 0 2px 2px #bfbfbf;
 }
