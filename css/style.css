@@ -1,15 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-
-  font-family: "PT Sans Narrow", Arial, sans-serif;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 400;
   color: #000000;
-  text-transform: uppercase;
-
   background-color: #ffffff;
 }
 
@@ -17,12 +13,28 @@ a {
   text-decoration: none;
 }
 
+
+ /* .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}  */
+
 .main-navigation {
-  font-size: 16px;
+  /* font-size: 16px;
   line-height: 30px;
   color: #ffffff;
 
-  background-color: #eeeeee;
+  background-color: #eeeeee; */
+font-size: 16px;
+ line-height: 30px;
+ font-weight: 500;
+ color: #000000;
 }
 
 .site-navigation,
@@ -33,6 +45,7 @@ a {
 .site-navigation a,
 .user-navigation a {
   color: #000000;
+  text-transform: uppercase;
 }
 
 .logo a:hover {
@@ -62,13 +75,17 @@ a {
   border-bottom: 1px solid #e74246;
 } */
 
+.features-title{
+  font-size: 55px;
+  line-height: 55px;
+}
 .slider {
   background-color: #eeeeee;
 }
 
 .button{
   /* font: inherit; */
-
+  line-height: 18px;
   text-align: center;
   vertical-align: middle;
   /*text-transform: uppercase;
@@ -78,6 +95,7 @@ a {
 }
 
 .seemore{
+
   color: #ffffff;
   background-color: #fb565a;
 }
@@ -91,6 +109,17 @@ a {
   background-color: #d7373b;
 }
 
+.service-item{
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about-title{
+  font-size: 45px;
+  line-height: 45px;
+}
 .order-red{
   color: #ffffff;
   background-color: #fb565a;
@@ -136,6 +165,37 @@ a {
   background-color: #e5a722;
 }
 
+h3{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.number{
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 47px;
+}
+
+.small-symbol{
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 47px;
+}
+
+td{
+  line-height: 35px;
+}
+
+.adress-title{
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.adress{
+  color: #666666;
+}
+
 .partners a{
   opacity: 0.6;
 }
@@ -169,6 +229,12 @@ a {
 .form-write-us textarea:active,
 .sorting button:active{
   opacity: 1;
+}
+
+.form-write-us input:invalid,
+.form-write-us textarea:invalid{
+  color:#fb565a;
+  border: 1px solid #fb565a;
 }
 
 .show,
@@ -212,6 +278,10 @@ button.catalog-active{
 
 .grid:hover{
   opacity: 1;
+}
+
+.grid:disabled{
+  opacity: 0.3;
 }
 
 .price{

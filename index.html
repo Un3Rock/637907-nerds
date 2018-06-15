@@ -16,7 +16,7 @@
           </a>
         </div>
         <ul class="site-navigation">
-          <li><a class="active" href="#">Студия</a></li>
+          <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
@@ -102,9 +102,9 @@
         <h3>С 2004 года любим точность во всем:</h3>
         <table >
            <tr>
-               <td>146<span class="small-symbol">%</span></td>
-               <td>100<span class="small-symbol">%</span></td>
-               <td>50<span class="small-symbol">%</span></td>
+               <td class="number">146<span class="small-symbol">%</span></td>
+               <td class="number">100<span class="small-symbol">%</span></td>
+               <td class="number">50<span class="small-symbol">%</span></td>
            </tr>
            <tr>
                <td>Уровень самоотдачи</td>
@@ -129,11 +129,11 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer-adress">
-        <h3>NЁRDS DESIGN STUDIO</h3>
-        <p>191186, Санкт-Петербург<br>
+        <h3 class="adress-title">NЁRDS DESIGN STUDIO</h3>
+        <p class="adress">191186, Санкт-Петербург<br>
         ул. Б. Конюшенная, д. 19/8<br><br>
         тел. +7(812) 275-75-75</p>
-        <button class="button">НАПИШИТЕ НАМ</button>
+        <button class="button seemore">НАПИШИТЕ НАМ</button>
       </div>
 
       <img src="img/footer-map.jpg" alt="Где мы находимся">
@@ -157,12 +157,12 @@
       <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
         <p class="write-us">НАПИШИТЕ НАМ</p>
         <label for="name-field">Ваше имя:</label>
-        <input type="text" id="name-field" name="name" value="Имя Фамилия">
+        <input type="text" id="name-field" name="name" value="Имя Фамилия" required>
         <label for="email-field">Ваш e-mail:</label>
-        <input type="text" id="email-field" name="name" value="email@example.com">
+        <input type="text" id="email-field" name="name" value="email@example.com" required>
         <label for="comment-field">Текст письма:</label>
         <textarea name="comment" id="comment-field" rows="10">В свободной форме</textarea>
-        <button class="button">ОТПРАВИТЬ</button>
+        <button class="button seemore">ОТПРАВИТЬ</button>
       </form>
     </div>
   </body>
