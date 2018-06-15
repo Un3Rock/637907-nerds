@@ -165,9 +165,23 @@ font-size: 16px;
   background-color: #e5a722;
 }
 
+h1{
+  font-size: 55px;
+  line-height: 55px;
+}
+
+h2{
+  text-transform: uppercase;
+}
+
 h3{
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.range{
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .number{
@@ -186,13 +200,21 @@ td{
   line-height: 35px;
 }
 
-.adress-title{
+.adress-title,
+h2,
+.catalog-item{
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
 }
 
-.adress{
+.catalog-item,
+.catalog-button{
+  text-transform: uppercase;
+}
+
+.adress,
+.info-text{
   color: #666666;
 }
 
@@ -210,6 +232,9 @@ td{
 
 .sorting button{
  background-color: none;
+ font-size: 14px;
+ line-height: 18px;
+ text-transform: uppercase;
 }
 
 
@@ -274,6 +299,8 @@ button.catalog-active{
 }
 .grid{
   opacity: 0.6;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .grid:hover{
@@ -282,6 +309,14 @@ button.catalog-active{
 
 .grid:disabled{
   opacity: 0.3;
+}
+
+.show,
+.info-text,
+.button-price,
+.catalog-button{
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .price{

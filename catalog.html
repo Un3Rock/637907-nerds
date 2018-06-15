@@ -35,11 +35,11 @@
           <label>
             <input type="range" name="min-interval">
           </label>
-          <label>
+          <label class="range">
             ОТ
             <input type="text" name="start" value="0">
           </label>
-          <label>
+          <label class="range">
             ДО
             <input type="text" name="end" value="15000">
           </label>
@@ -93,7 +93,7 @@
               </div>
               <div class="visually-hidden info">
                 <h3 class="catalog-item">SEDONA</h3>
-                <p>Информационный сайт для туристов</p>
+                <p class="info-text">Информационный сайт для туристов</p>
                 <button class="button price">9 900 РУБ.</button>
               </div>
               <div >
@@ -101,48 +101,48 @@
               </div>
               <div class="visually-hidden info">
                 <h3 class="catalog-item">PINK</h3>
-                <p>Продуктовый лендинг приложения для IOS и Android</p>
-                <button>9 900 РУБ.</button>
+                <p class="info-text">Продуктовый лендинг приложения для IOS и Android</p>
+                <button class="button price">9 900 РУБ.</button>
               </div>
               <div >
                 <img class="templates" src="img/barbershop.jpg" alt="borodinski">
               </div>
               <div class="visually-hidden info">
                 <h3 class="catalog-item">BORODINSKI</h3>
-                <p>Сайт салона красоты. Для мужчин, да.</p>
-                <button>9 900 РУБ.</button>
+                <p class="info-text">Сайт салона красоты. Для мужчин, да.</p>
+                <button class="button price">9 900 РУБ.</button>
               </div>
                 <div >
                   <img class="templates" src="img/mishka.jpg" alt="mishka">
                 </div>
               <div class="visually-hidden info">
                 <h3 class="catalog-item">MISHKA</h3>
-                <p>Интернет-магазин вязанных игрушек</p>
-                <button>9 900 РУБ.</button>
+                <p class="info-text">Интернет-магазин вязанных игрушек</p>
+                <button class="button price">9 900 РУБ.</button>
               </div>
                 <div >
                   <img  class="templates" src="img/A+.jpg" alt="A+">
                 </div>
               <div class="visually-hidden info">
                 <h3 class="catalog-item">A+</h3>
-                <p>Лендинг курсов повышения квалификации</p>
-                <button>9 900 РУБ.</button>
+                <p class="info-text">Лендинг курсов повышения квалификации</p>
+                <button class="button price">9 900 РУБ.</button>
               </div>
               <div >
                 <img class="templates" src="img/kvast.jpg" alt="kvast">
                 </div>
                 <div class="visually-hidden info">
                   <h3 class="catalog-item">KVAST</h3>
-                  <p>Промо-сайт производителей крафтового кваса</p>
-                  <button>9 900 РУБ.</button>
+                  <p class="info-text">Промо-сайт производителей крафтового кваса</p>
+                  <button class="button price">9 900 РУБ.</button>
                 </div>
               </div>
             </div>
             <div class="catalog-navigation">
-              <button class="button catalog-active" >1</button>
-              <button class="button">2</button>
-              <button class="button">3</button>
-              <button class="button">СЛЕДУЮЩАЯ</button>
+              <button class="button catalog-button catalog-active" >1</button>
+              <button class="button catalog-button">2</button>
+              <button class="button catalog-button">3</button>
+              <button class="button catalog-button">СЛЕДУЮЩАЯ</button>
             </div>
 
         </div>
@@ -150,11 +150,11 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer-adress">
-        <h3>NЁRDS DESIGN STUDIO</h3>
-        <p>191186, Санкт-Петербург<br>
+        <h3 class="adress-title">NЁRDS DESIGN STUDIO</h3>
+        <p class="adress">191186, Санкт-Петербург<br>
         ул. Б. Конюшенная, д. 19/8<br><br>
         тел. +7(812) 275-75-75</p>
-        <button class="button">НАПИШИТЕ НАМ</button>
+        <button class="button seemore">НАПИШИТЕ НАМ</button>
       </div>
 
       <img src="img/footer-map.jpg" alt="Где мы находимся">
@@ -178,12 +178,12 @@
       <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
         <p class="write-us">НАПИШИТЕ НАМ</p>
         <label for="name-field">Ваше имя:</label>
-        <input type="text" id="name-field" name="name" value="Имя Фамилия">
+        <input type="text" id="name-field" name="name" value="Имя Фамилия" required>
         <label for="email-field">Ваш e-mail:</label>
         <input type="text" id="email-field" name="name" value="email@example.com" required>
         <label for="comment-field">Текст письма:</label>
         <textarea name="comment" id="comment-field" rows="10">В свободной форме</textarea>
-        <button>ОТПРАВИТЬ</button>
+        <button class="button seemore">ОТПРАВИТЬ</button>
       </form>
     </div>
     </body>
