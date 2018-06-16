@@ -269,7 +269,9 @@ font-size: 16px;
 
 
 .form-write-us input,
-.form-write-us textarea,
+.form-write-us textarea{
+  color: #444444;
+}
 .form-write-us input:hover,
 .form-write-us textarea:hover
 {
@@ -285,9 +287,10 @@ font-size: 16px;
 
 }
 
-.form-write-us input::placeholder:focus,
-.form-write-us textarea::placeholder:focus{
+.form-write-us input:focus::placeholder,
+.form-write-us textarea:focus::placeholder{
   color: #444444;
+  opacity: 0.5;
 }
 
 .sorting button:hover{
