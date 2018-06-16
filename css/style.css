@@ -172,12 +172,12 @@ font-size: 16px;
   background-color: #e5a722;
 }
 
-h1{
+.catalog-main-title{
   font-size: 55px;
   line-height: 55px;
 }
 
-h2{
+.catalog-titles{
   text-transform: uppercase;
 }
 
