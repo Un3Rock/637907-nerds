@@ -5,7 +5,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: #000000;
+  color: #283136;
   background-color: #ffffff;
 }
 
@@ -52,18 +52,16 @@ font-size: 16px;
   opacity: 0.6;
 }
 
-.logo a:active {
+.logo a:active,
+.site-navigation a:active,
+.user-navigation a:active{
+  color: #000000;
   opacity: 0.3;
 }
 
 .site-navigation a:hover,
 .user-navigation a:hover{
   color: #fb565a;
-}
-
-.site-navigation a:active,
-.user-navigation a:active {
-  color: #a9a9a9;
 }
 
 .active{
@@ -78,6 +76,7 @@ font-size: 16px;
 .features-title{
   font-size: 55px;
   line-height: 55px;
+  font-weight: 500;
 }
 .slider {
   background-color: #eeeeee;
@@ -88,14 +87,17 @@ font-size: 16px;
   line-height: 18px;
   text-align: center;
   vertical-align: middle;
-  /*text-transform: uppercase;
-  color: #ffffff;
+  text-transform: uppercase;
+  /*color: #ffffff;
   background-color: #000000; */
   border: none;
 }
 
-.seemore{
+/* .button:active{
+  color: rgba(255,255,255,0.3);
+} */
 
+.seemore{
   color: #ffffff;
   background-color: #fb565a;
 }
@@ -105,9 +107,13 @@ font-size: 16px;
 }
 
 .seemore:active{
-  color: #e4babb;
+  color: rgba(255,255,255,0.3);
   background-color: #d7373b;
 }
+
+/* .seemore-text:active{
+  opacity: 0.3;
+} */
 
 .service-item{
   font-size: 24px;
@@ -119,6 +125,7 @@ font-size: 16px;
 .about-title{
   font-size: 45px;
   line-height: 45px;
+  font-weight: 500;
 }
 .order-red{
   color: #ffffff;
@@ -131,7 +138,7 @@ font-size: 16px;
 }
 
 .order-red:active{
-  color: #e4babb;
+  color: rgba(255,255,255,0.3);
   background-color: #d7373b;
 }
 
@@ -146,7 +153,7 @@ font-size: 16px;
 }
 
 .order-green:active{
-  color: #e4babb;
+  color: rgba(255,255,255,0.3);
   background-color: #00aa62;
 }
 
@@ -161,7 +168,7 @@ font-size: 16px;
 }
 
 .order-yellow:active{
-  color: #e4babb;
+  color: rgba(255,255,255,0.3);
   background-color: #e5a722;
 }
 
@@ -174,7 +181,8 @@ h2{
   text-transform: uppercase;
 }
 
-h3{
+.section-header{
+  font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -187,13 +195,15 @@ h3{
 .number{
   font-size: 45px;
   font-weight: bold;
-  line-height: 47px;
+  line-height: 10.06px;
 }
 
 .small-symbol{
-  font-size: 22px;
-  font-weight: bold;
-  line-height: 47px;
+
+}
+
+.section-features{
+  color: #283136;
 }
 
 td{
@@ -218,6 +228,19 @@ h2,
   color: #666666;
 }
 
+.footer-title{
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 36px;
+}
+
+.discount{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #444444;
+}
+
 .partners a{
   opacity: 0.6;
 }
@@ -240,18 +263,25 @@ h2,
 
 .form-write-us input,
 .form-write-us textarea,
+.form-write-us input:hover,
+.form-write-us textarea:hover
+{
+  color: rgba(68,68,68,0.5);
+}
+
 .sorting button{
   opacity: 0.3;
 }
 
-.form-write-us input:hover,
-.form-write-us textarea:hover,
+.form-write-us input:focus,
+.form-write-us textarea:focus{
+  color: #444444;
+}
+
 .sorting button:hover{
   opacity: 0.6;
 }
 
-.form-write-us input:active,
-.form-write-us textarea:active,
 .sorting button:active{
   opacity: 1;
 }
@@ -275,7 +305,7 @@ h2,
 
 .show:active,
 .catalog-navigation button:active{
-  color: #959595;
+  color: rgba(0,0,0,0.5);
   background-color: #d5d5d5;
   box-shadow: inset 0 2px 0 0 #bfbfbf;
 }
@@ -314,7 +344,8 @@ button.catalog-active{
 .show,
 .info-text,
 .button-price,
-.catalog-button{
+.catalog-button,
+.field{
   font-size: 16px;
   line-height: 18px;
 }
@@ -336,10 +367,10 @@ button.catalog-active{
   background-color: #eeeeee;
 }
 
-.info:hover{
-
-}
-
 .templates:hover{
   box-shadow:  0 0 2px 2px #bfbfbf;
+}
+
+.field{
+  font-weight: 700;
 }
