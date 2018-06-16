@@ -175,6 +175,7 @@ font-size: 16px;
 .catalog-main-title{
   font-size: 55px;
   line-height: 55px;
+  font-weight: 500;
 }
 
 .catalog-titles{
@@ -206,16 +207,22 @@ font-size: 16px;
   color: #283136;
 }
 
-td{
+.number,
+.section-features{
   line-height: 35px;
 }
 
 .adress-title,
-h2,
+.catalog-titles,
 .catalog-item{
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 30px;
+  color: #000000;
+}
+
+.number sup {
+  top: -0.25em;
 }
 
 .catalog-item,
@@ -275,6 +282,11 @@ h2,
 
 .form-write-us input:focus,
 .form-write-us textarea:focus{
+
+}
+
+.form-write-us input::placeholder:focus,
+.form-write-us textarea::placeholder:focus{
   color: #444444;
 }
 
@@ -292,10 +304,13 @@ h2,
   border: 1px solid #fb565a;
 }
 
+
+
 .show,
 .catalog-navigation button{
   color: #000000;
   background-color: #eeeeee;
+  font-weight: 500;
 }
 
 .show:hover,
@@ -311,7 +326,7 @@ h2,
 }
 
 button.catalog-active{
-  background-color: white !important;
+  background-color: #ffffff;
   border: 1px solid #eeeeee;
 }
 
@@ -350,9 +365,14 @@ button.catalog-active{
   line-height: 18px;
 }
 
+.show,
+.catalog-button{
+  font-weight: 500;
+}
 .price{
   color: #ffffff;
   background-color: #fb565a;
+  font-weight: 500;
 }
 
 .price:hover{
