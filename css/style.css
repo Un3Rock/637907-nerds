@@ -52,19 +52,19 @@ font-size: 16px;
   opacity: 0.6;
 }
 
+.site-navigation a:hover,
+.user-navigation a:hover {
+  color: #fb565a;
+}
+
 .logo a:active,
 .site-navigation a:active,
-.user-navigation a:active{
+.user-navigation a:active {
   color: #000000;
   opacity: 0.3;
 }
 
-.site-navigation a:hover,
-.user-navigation a:hover{
-  color: #fb565a;
-}
-
-.active{
+.active {
   border-bottom: 1px solid #e74246;
 }
 /* .site-navigation a:active,
@@ -73,7 +73,7 @@ font-size: 16px;
   border-bottom: 1px solid #e74246;
 } */
 
-.features-title{
+.features-title {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -82,7 +82,7 @@ font-size: 16px;
   background-color: #eeeeee;
 }
 
-.button{
+.button {
   /* font: inherit; */
   line-height: 18px;
   text-align: center;
@@ -97,16 +97,16 @@ font-size: 16px;
   color: rgba(255,255,255,0.3);
 } */
 
-.seemore{
+.seemore {
   color: #ffffff;
   background-color: #fb565a;
 }
 
-.seemore:hover{
+.seemore:hover {
   background-color: #e74246;
 }
 
-.seemore:active{
+.seemore:active {
   color: rgba(255,255,255,0.3);
   background-color: #d7373b;
 }
@@ -115,106 +115,106 @@ font-size: 16px;
   opacity: 0.3;
 } */
 
-.service-item{
+.service-item {
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.about-title{
+.about-title {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
 }
-.order-red{
+.order-red {
   color: #ffffff;
   background-color: #fb565a;
 }
 
-.order-red:hover{
+.order-red:hover {
   color: #ffffff;
   background-color: #e74246;
 }
 
-.order-red:active{
+.order-red:active {
   color: rgba(255,255,255,0.3);
   background-color: #d7373b;
 }
 
-.order-green{
+.order-green {
   color: #ffffff;
   background-color: #00ca74;
 }
 
-.order-green:hover{
+.order-green:hover {
   color: #ffffff;
   background-color: #00bc6c;
 }
 
-.order-green:active{
+.order-green:active {
   color: rgba(255,255,255,0.3);
   background-color: #00aa62;
 }
 
-.order-yellow{
+.order-yellow {
   color: #ffffff;
   background-color: #efc84a;
 }
 
-.order-yellow:hover{
+.order-yellow:hover {
   color: #ffffff;
   background-color: #eab534;
 }
 
-.order-yellow:active{
+.order-yellow:active {
   color: rgba(255,255,255,0.3);
   background-color: #e5a722;
 }
 
-.catalog-main-title{
+.catalog-main-title {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
 }
 
-.catalog-titles{
+.catalog-titles {
   text-transform: uppercase;
 }
 
-.section-header{
+.section-header {
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.range{
+.range {
   font-size: 16px;
   line-height: 22px;
 }
 
-.number{
+.number {
   font-size: 45px;
   font-weight: bold;
   line-height: 10.06px;
 }
 
-.small-symbol{
+.small-symbol {
 
 }
 
-.section-features{
+.section-features {
   color: #283136;
 }
 
 .number,
-.section-features{
+.section-features {
   line-height: 35px;
 }
 
 .adress-title,
 .catalog-titles,
-.catalog-item{
+.catalog-item {
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
@@ -226,41 +226,41 @@ font-size: 16px;
 }
 
 .catalog-item,
-.catalog-button{
+.catalog-button {
   text-transform: uppercase;
 }
 
 .adress,
-.info-text{
+.info-text {
   color: #666666;
 }
 
-.footer-title{
+.footer-title {
   font-size: 36px;
   font-weight: bold;
   line-height: 36px;
 }
 
-.discount{
+.discount {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
   color: #444444;
 }
 
-.partners a{
+.partners a {
   opacity: 0.6;
 }
 
-.partners a:hover{
+.partners a:hover {
   opacity: 1;
 }
 
-.partners a:active{
+.partners a:active {
   opacity: 0.3;
 }
 
-.sorting button{
+.sorting button {
  background-color: none;
  font-size: 14px;
  line-height: 18px;
@@ -269,93 +269,92 @@ font-size: 16px;
 
 
 .form-write-us input,
-.form-write-us textarea{
+.form-write-us textarea {
   color: #444444;
 }
 .form-write-us input:hover,
 .form-write-us textarea:hover
 {
-  color: rgba(68,68,68,0.5);
+  color: #444444;
 }
 
-.sorting button{
+.sorting button {
   opacity: 0.3;
 }
 
 .form-write-us input:focus,
-.form-write-us textarea:focus{
+.form-write-us textarea:focus {
 
 }
 
 .form-write-us input:focus::placeholder,
-.form-write-us textarea:focus::placeholder{
+.form-write-us textarea:focus::placeholder {
   color: #444444;
   opacity: 0.5;
 }
 
-.sorting button:hover{
+.sorting button:hover {
   opacity: 0.6;
 }
 
-.sorting button:active{
+.sorting button:active {
   opacity: 1;
 }
 
 .form-write-us input:invalid,
-.form-write-us textarea:invalid{
+.form-write-us textarea:invalid {
   color:#fb565a;
   border: 1px solid #fb565a;
 }
 
-
-
 .show,
-.catalog-navigation button{
+.catalog-navigation button {
   color: #000000;
   background-color: #eeeeee;
   font-weight: 500;
 }
 
 .show:hover,
-.catalog-navigation button:hover{
+.catalog-navigation button:hover {
   background-color: #dfdfdf;
 }
 
 .show:active,
-.catalog-navigation button:active{
+.catalog-navigation button:active {
   color: rgba(0,0,0,0.5);
   background-color: #d5d5d5;
   box-shadow: inset 0 2px 0 0 #bfbfbf;
 }
 
-button.catalog-active{
+button.catalog-active {
   background-color: #ffffff;
   border: 1px solid #eeeeee;
 }
 
-.modal-close{
+.modal-close {
   color:red;
   opacity: 0.6;
 }
 
-.modal-close:hover{
+.modal-close:hover {
   opacity: 1;
 }
 
-.modal-close:active{
+.modal-close:active {
   opacity: 0.3;
 }
-.grid{
+
+.grid {
   opacity: 0.6;
   font-size: 16px;
   line-height: 20px;
 }
 
-.grid:hover{
+.grid:hover {
   opacity: 1;
 }
 
-.grid:disabled{
+.grid:disabled {
   opacity: 0.3;
 }
 
@@ -363,37 +362,38 @@ button.catalog-active{
 .info-text,
 .button-price,
 .catalog-button,
-.field{
+.field {
   font-size: 16px;
   line-height: 18px;
 }
 
 .show,
-.catalog-button{
+.catalog-button {
   font-weight: 500;
 }
-.price{
+
+.price {
   color: #ffffff;
   background-color: #fb565a;
   font-weight: 500;
 }
 
-.price:hover{
+.price:hover {
   background-color: #e74246;
 }
 
-.price:active{
+.price:active {
   background-color: #d7373b;
 }
 
-.info{
+.info {
   background-color: #eeeeee;
 }
 
-.templates:hover{
+.templates:hover {
   box-shadow:  0 0 2px 2px #bfbfbf;
 }
 
-.field{
+.field {
   font-weight: 700;
 }
