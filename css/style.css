@@ -13,8 +13,12 @@ a {
   text-decoration: none;
 }
 
+/* .main-header {
+  width: 100%;
+} */
 
- /* .visually-hidden {
+
+ .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -23,23 +27,23 @@ a {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}  */
+}
 
 .main-navigation {
-  /* font-size: 16px;
-  line-height: 30px;
-  color: #ffffff;
 
-  background-color: #eeeeee; */
-font-size: 16px;
+ background-color: #eeeeee;
+ font-size: 16px;
  line-height: 30px;
  font-weight: 500;
  color: #000000;
+
+ display: flex;
 }
 
 .site-navigation,
 .user-navigation {
   list-style: none;
+
 }
 
 .site-navigation a,
@@ -47,6 +51,46 @@ font-size: 16px;
   color: #000000;
   text-transform: uppercase;
 }
+
+.logo {
+  width: 160px;
+
+  margin-left: 100px;
+
+  /* Временно для сетки */
+  /* display: block; */
+}
+
+.site-navigation {
+  width: 440px;
+  margin: auto;
+  /* margin: 0;*/
+  padding: 0;
+
+
+  list-style: none;
+
+
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-navigation {
+  width: 120px;
+  margin-right: : 100px;
+  /* margin: 0;
+  padding: 0; */
+
+  list-style: none;
+
+
+}
+
+ /* .nav-container {
+  display: flex;
+  justify-content: space-around;
+} */
 
 .logo a:hover {
   opacity: 0.6;
@@ -72,6 +116,34 @@ font-size: 16px;
   color: #000000;
   border-bottom: 1px solid #e74246;
 } */
+
+.features {
+  display: flex;
+}
+
+.service {
+  display: flex;
+}
+
+.about {
+  display: flex;
+}
+
+.partners-list {
+  display: flex;
+  list-style: none;
+
+}
+
+.footer-social {
+  display: flex;
+}
+
+/* .social-list {
+  display: flex;
+} */
+
+
 
 .features-title {
   font-size: 55px;
@@ -176,6 +248,10 @@ font-size: 16px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+
+  height: 380px;
+  background-color: #eeeeee;
+  margin: auto;
 }
 
 .catalog-titles {

@@ -10,9 +10,11 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/nerds-logo.svg" width="100" height="50" alt="Нёрдс">
-        </a>
+        <div class="logo">
+          <a class="main-header-logo" href="index.html">
+            <img src="img/nerds-logo.svg" width="100" height="50" alt="Нёрдс">
+          </a>
+        </div>
         <ul class="site-navigation">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
@@ -156,32 +158,37 @@
         тел. +7(812) 275-75-75</p>
         <button class="button seemore">НАПИШИТЕ НАМ</button>
       </div>
-
       <img src="img/footer-map.jpg" alt="Где мы находимся">
 
-      <ul class="footer-social">
-        <li class="social-item">
-          <a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a>
-        </li>
-        <li class="social-item">
-          <a class="social-button" href="#"><span class="visually-hidden">Facebook</span></a>
-        </li>
-        <li class="social-item">
-          <a class="social-button" href="#"><span class="visually-hidden">Instagram</span></a>
-        </li>
-      </ul>
-      <p class="footer-title">Давайте дружить, это выгодно</p>
-      <p class="discount">Скидка 10% для друзей из социальных сетей</p>
-    </footer>
-    <div class="visually-hidden">
+      <section class="footer-social">
+        <div>
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a>
+            </li>
+            <li class="social-item">
+              <a class="social-button" href="#"><span class="visually-hidden">Facebook</span></a>
+            </li>
+            <li class="social-item">
+              <a class="social-button" href="#"><span class="visually-hidden">Instagram</span></a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-title">Давайте дружить, это выгодно</p>
+          <p class="discount">Скидка 10% для друзей из социальных сетей</p>
+        </div>
+      </section>
+      </footer>
+      <div class="visually-hidden">
       <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
       <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
         <p class="write-us">НАПИШИТЕ НАМ</p>
-        <label for="field name">Ваше имя:</label>
+        <label for="name-field">Ваше имя:</label>
         <input type="text" id="name-field" name="name" value="" placeholder="Имя Фамилия" >
-        <label for="field email">Ваш e-mail:</label>
-        <input type="text" id="email-field" name="name" value="" placeholder="email@example.com"required>
-        <label for="field comment">Текст письма:</label>
+        <label for="email-field">Ваш e-mail:</label>
+        <input type="text" id="email-field" name="name" value="" placeholder="email@example.com" required>
+        <label for="comment-field">Текст письма:</label>
         <textarea name="comment" id="comment-field" rows="10" placeholder="В свободной форме" disabled></textarea>
         <button class="button seemore">ОТПРАВИТЬ</button>
       </form>

@@ -10,27 +10,29 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <div class="logo">
-          <a class="main-header-logo">
-            <img src="img/nerds-logo.svg" width="100" height="50" alt="Нёрдс">
-          </a>
-        </div>
-        <ul class="site-navigation">
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li class="basket-link"><a href="basket.html">Корзина</a></li>
-        </ul>
+
+          <div class="logo">
+            <a class="main-header-logo">
+              <img src="img/nerds-logo.svg" width="100" height="50" alt="Нёрдс">
+            </a>
+          </div>
+          <ul class="site-navigation">
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <ul class="user-navigation">
+            <li class="basket-link"><a href="basket.html">Корзина</a></li>
+          </ul>
+
       </nav>
     </header>
     <main class="container">
 
       <section class="slider">
            <h1 class="visually-hidden">Студия «Нёрдс»</h1>
-
+            <div class="visually-hidden">
                <input type="radio" id="btn-1" name="toggle" checked>
                <input type="radio" id="btn-2" name="toggle">
                <input type="radio" id="btn-3" name="toggle">
@@ -39,27 +41,40 @@
                    <label for="btn-2"></label>
                    <label for="btn-3"></label>
                </div>
-               <div class="slider-inner">
-                   <div class="slider-slides">
-                     <div class="features">
-                       <p class="features-title">Долго, дорого, скрупулезно</p>
-                       <p>  Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-                       <img src="img/slide1.png" alt="">
-                       <button class="button seemore">УЗНАТЬ БОЛЬШЕ</button>
-                     </div>
+              </div>
+              <div class="slider-inner">
+                  <div class="slider-slides">
+                    <div class="features">
+                    <div>
+                      <p class="features-title">Долго, дорого, скрупулезно</p>
+                      <p>  Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                      <button class="button seemore">УЗНАТЬ БОЛЬШЕ</button>
+                      </div>
+                    <div>
+                      <img src="img/slide1.png" alt="">
+                    </div>
+                    </div>
+
+                  <div class="features">
+                    <div>
+                      <p class="features-title">Любим математику как никто другой</p>
+                      <p>  Никакого креатива, только математические формулы для расчета пропорций.</p>
+                      <button class="button seemore">УЗНАТЬ БОЛЬШЕ</button>
+                    </div>
+                    <div>
+                      <img src="img/slide2.png" alt="">
+                    </div>
+                  </div>
 
                      <div class="features">
-                       <p class="features-title">Любим математику как никто другой</p>
-                       <p>  Никакого креатива, только математические формулы для расчета пропорций.</p>
-                       <img src="img/slide2.png" alt="">
-                       <button class="button seemore">УЗНАТЬ БОЛЬШЕ</button>
-                     </div>
-
-                     <div class="features">
+                       <div>
                        <p class="features-title">Только ночь, только хардкор</p>
                        <p>  Работать днем, Как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                       <img src="img/slide3.png" alt="">
                        <button class="button seemore">УЗНАТЬ БОЛЬШЕ</button>
+                       </div>
+                       <div>
+                       <img src="img/slide3.png" alt="">
+                       </div>
                      </div>
 
                    </div>
@@ -69,24 +84,29 @@
 
       <section class="service">
         <h2 class="visually-hidden">Продукция</h2>
-        <img src="img/illustration-1.png" alt="">
-        <h3 class="service-item">Веб-сайты</h3>
-        <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-        <button class="button order-red">ЗАКАЗАТЬ</button>
-
-        <img src="img/illustration-2.png" alt="">
-        <h3 class="service-item">Приложения</h3>
-        <p>Покорите топ-10 приложений в AppStore и Coogle Play</p>
-        <button class="button order-green">ЗАКАЗАТЬ</button>
-
-        <img src="img/illustration-3.png" alt="">
-        <h3 class="service-item">Презентации</h3>
-        <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-        <button class="button order-yellow">ЗАКАЗАТЬ</button>
+        <div>
+          <img src="img/illustration-1.png" alt="">
+          <h3 class="service-item">Веб-сайты</h3>
+          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <button class="button order-red">ЗАКАЗАТЬ</button>
+        </div>
+        <div>
+          <img src="img/illustration-2.png" alt="">
+          <h3 class="service-item">Приложения</h3>
+          <p>Покорите топ-10 приложений в AppStore и Coogle Play</p>
+          <button class="button order-green">ЗАКАЗАТЬ</button>
+        </div>
+        <div>
+          <img src="img/illustration-3.png" alt="">
+          <h3 class="service-item">Презентации</h3>
+          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+          <button class="button order-yellow">ЗАКАЗАТЬ</button>
+        </div>
       </section>
 
       <section class="about">
         <h2 class="visually-hidden">О нас</h2>
+        <div>
           <p class="about-title">Мы - маленькая, но гордая дизайн-студия
                 из Краснодара</p>
           <p>Исповедуем принципы минимализма и чистоты.
@@ -98,6 +118,8 @@
             <li class="about-item">Мобильных приложений для IOS и Android</li>
             <li class="about-item">Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
+        </div>
+        <div>
         <img src="img/nerds-illustration.png" alt="Логотип-2">
         <h3 class="section-header">С 2004 года любим точность во всем:</h3>
         <table >
@@ -112,6 +134,7 @@
                <td class="section-features">Минимальная предоплата</td>
            </tr>
        </table>
+     </div>
      </section>
      <section class="partners">
         <h2 class="visually-hidden">Наши партнеры</h2>
@@ -137,30 +160,35 @@
       </div>
 
       <img src="img/footer-map.jpg" alt="Где мы находимся">
-
-      <ul class="footer-social">
-        <li class="social-item">
-          <a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a>
-        </li>
-        <li class="social-item">
-          <a class="social-button" href="#"><span class="visually-hidden">Facebook</span></a>
-        </li>
-        <li class="social-item">
-          <a class="social-button" href="#"><span class="visually-hidden">Instagram</span></a>
-        </li>
-      </ul>
-      <p class="footer-title">Давайте дружить, это выгодно</p>
-      <p class="discount">Скидка 10% для друзей из социальных сетей</p>
+      <section class="footer-social">
+        <div>
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a>
+            </li>
+            <li class="social-item">
+              <a class="social-button" href="#"><span class="visually-hidden">Facebook</span></a>
+            </li>
+            <li class="social-item">
+              <a class="social-button" href="#"><span class="visually-hidden">Instagram</span></a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-title">Давайте дружить, это выгодно</p>
+          <p class="discount">Скидка 10% для друзей из социальных сетей</p>
+        </div>
+      </section>
     </footer>
     <div class="visually-hidden">
       <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
       <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
         <p class="write-us">НАПИШИТЕ НАМ</p>
-        <label for="field name">Ваше имя:</label>
+        <label for="name-field">Ваше имя:</label>
         <input type="text" id="name-field" name="name" value="" placeholder="Имя Фамилия" >
-        <label for="field email">Ваш e-mail:</label>
-        <input type="text" id="email-field" name="name" value="" placeholder="email@example.com"required>
-        <label for="field comment">Текст письма:</label>
+        <label for="email-field">Ваш e-mail:</label>
+        <input type="text" id="email-field" name="name" value="" placeholder="email@example.com" required>
+        <label for="comment-field">Текст письма:</label>
         <textarea name="comment" id="comment-field" rows="10" placeholder="В свободной форме" disabled></textarea>
         <button class="button seemore">ОТПРАВИТЬ</button>
       </form>
