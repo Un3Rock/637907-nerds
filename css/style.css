@@ -7,7 +7,7 @@ body {
   font-weight: 400;
   color: #283136;
   background-color: #ffffff;
-  /* width: 1440px; */
+  min-width: 1200px;
 }
 
 a {
@@ -157,14 +157,18 @@ img {
 } */
 
 .service-list {
+  padding: 0;
+  margin: 0;
+
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   list-style: none;
 }
 
 .service-block {
   width: 300px;
+   margin-right: 100px;
 }
 
 .about-section {
@@ -439,6 +443,14 @@ padding-top: 100px;
 
 .partners a:active {
   opacity: 0.3;
+}
+
+.main-footer-adress {
+  position: absolute;
+}
+
+.map img {
+  width: 100%;
 }
 
 .sorting button {
