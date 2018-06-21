@@ -20,7 +20,7 @@ img {
 }
 
 .main-header {
-  width: 1440;
+  /* width: 1440px; */
   padding: 10px;
 
   background-color: #eeeeee;
@@ -77,7 +77,11 @@ img {
 
 .main-navigation {
 
+ /* padding: 0 20px; */
  /* background-color: #eeeeee; */
+ padding-top: 40px;
+ margin-right: -18px;
+
  font-size: 16px;
  line-height: 30px;
  font-weight: 500;
@@ -85,6 +89,8 @@ img {
 
  display: flex;
  justify-content: space-between;
+
+ /* vertical-align: middle; */
 }
 
 .site-navigation,
@@ -99,19 +105,27 @@ img {
   text-transform: uppercase;
 }
 
-.logo {
+/* .logo {
   width: 160px;
 
-}
+} */
 
 .site-navigation {
   width: 440px;
-  margin: auto;
+  margin: 0;
   padding: 0;
   list-style: none;
 
+  padding-top: 25px;
+  padding-right: 87px;
+
+
   display: flex;
   justify-content: space-between;
+}
+
+.site-navigation li:nth-child(2n+1) {
+  padding-left: 2px;
 }
 
 .user-navigation {
@@ -120,8 +134,10 @@ img {
   margin: 0;
   padding: 0;
 
-  list-style: none;
+  padding-top: 25px;
+  margin-right: -30px;
 
+  list-style: none;
 }
 
 .logo a:hover {
@@ -167,9 +183,25 @@ img {
 }
 
 .service-block {
-  width: 300px;
+
    margin-right: 100px;
 }
+
+/* .service-block img {
+
+} */
+
+.service-list {
+  padding-top: 68px;
+}
+
+.service-item {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 
 .about-section {
   display: flex;
@@ -205,8 +237,20 @@ img {
   line-height: 55px;
   font-weight: 500;
 
+  margin-bottom: 30px;
 }
 
+
+.subscription {
+  width: 500px;
+  padding-top: 3px;
+  padding-right: 10px;
+}
+
+.slide  {
+  width: 900px;
+  padding-left: 15px;
+}
 /* .map {
   width: 1440px;
    padding: 10px;
@@ -235,27 +279,32 @@ img {
 .seemore {
   color: #ffffff;
   background-color: #fb565a;
+
+  display: block;
+  width: 240px;
+  padding: 13px 0;
+
+  font-size: 16px;
+  border-radius: 3px;
+
+  margin-top: 40px;
+
 }
 
-.seemore:hover {
+.button:hover,
+.button:focus {
   background-color: #e74246;
 }
 
 .seemore:active {
   color: rgba(255,255,255,0.3);
   background-color: #d7373b;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 /* .seemore-text:active{
   opacity: 0.3;
 } */
-
-.service-item {
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
 
 .about-title {
   font-size: 45px;
