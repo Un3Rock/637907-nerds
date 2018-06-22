@@ -27,7 +27,7 @@ img {
 }
 
 
- .visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -182,9 +182,19 @@ img {
   list-style: none;
 }
 
-.service-block {
+.service-list .service-block:first-child {
 
-   margin-right: 100px;
+   margin-right: -15px;
+}
+
+.service-list .service-block:nth-child(2) {
+
+   margin-right: 52px;
+}
+
+.service-list .service-block:last-child {
+
+   margin-right: 0px;
 }
 
 /* .service-block img {
@@ -200,20 +210,18 @@ img {
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 0;
+
 }
 
+/* .service-block h3 {
+margin-top: 10px;
+} */
 
 .about-section {
   display: flex;
   justify-content: space-between;
-
-}
-
-.partners-list {
-  display: flex;
-  justify-content: space-between;
-
-  list-style: none;
 
 }
 
@@ -259,6 +267,15 @@ img {
 
 .slider {
   background-color: #eeeeee;
+}
+
+.slider-controls i {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+
+  /* Временно для демонстрации */
+  background-color: red;
 }
 
 .button {
@@ -314,6 +331,16 @@ img {
 .order-red {
   color: #ffffff;
   background-color: #fb565a;
+
+  display: block;
+  width: 160px;
+  padding: 13px 0;
+
+  font-size: 16px;
+  border-radius: 3px;
+
+  margin-top: 35px;
+
 }
 
 .order-red:hover {
@@ -329,6 +356,15 @@ img {
 .order-green {
   color: #ffffff;
   background-color: #00ca74;
+
+  display: block;
+  width: 160px;
+  padding: 13px 0;
+
+  font-size: 16px;
+  border-radius: 3px;
+
+  margin-top: 35px;
 }
 
 .order-green:hover {
@@ -344,6 +380,15 @@ img {
 .order-yellow {
   color: #ffffff;
   background-color: #efc84a;
+
+  display: block;
+  width: 160px;
+  padding: 13px 0;
+
+  font-size: 16px;
+  border-radius: 3px;
+
+  margin-top: 35px;
 }
 
 .order-yellow:hover {
@@ -356,11 +401,131 @@ img {
   background-color: #e5a722;
 }
 
+.about {
+  margin-top: 120px;
+}
+
+.about-title {
+  margin-bottom: 30px;
+}
+
+.about-item {
+  padding-bottom: 25px;
+}
+
+.about-section-1 {
+margin-right: -55px;
+}
+
+.about-section-2 {
+  margin-top: 10px;
+}
+
+.about-section-2 img {
+  margin-left: 0px;
+
+}
+
+.section-header-1 {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  margin-top: 40px;
+  margin-bottom: 25px;
+
+}
+
+.section-header-2 {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  margin-top: 28px;
+  margin-bottom: 25px;
+  margin-left: 17px;
+}
+
+.number {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 10.06px;
+
+  padding-top: 35px;
+  padding-right: 20px;
+}
+
+.small-symbol {
+  font-size: 26px;
+}
+
+.number sup {
+  top: -0.6em;
+}
+
+.section-features {
+  padding-top: 15px;
+  color: #283136;
+
+  padding-top: 32px;
+
+  line-height: 20px;
+}
+
+.number,
+.section-features {
+  /* line-height: 24px; */
+}
+
+.partners {
+  margin-top: 85px;
+
+}
+
+.partners-list {
+  display: flex;
+  justify-content: space-between;
+
+  list-style: none;
+
+  padding-left: 30px;
+}
+
+.partners-list li:nth-child(1) {
+  margin-top: 10px;
+}
+
+.partners-list li:nth-child(2) {
+  margin-right: 10px;
+  margin-top: -2px;
+}
+
+.partners-list li:nth-child(3) {
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.partners-list li:nth-child(4) {
+  margin-right: 45px;
+}
+
+.partners a {
+  opacity: 0.6;
+}
+
+.partners a:hover {
+  opacity: 1;
+}
+
+.partners a:active {
+  opacity: 0.3;
+}
+
 .background-title {
  max-width: 100%;
- height: 200px;
+ height: 160px;
  background-color: #eeeeee;
-padding-top: 100px;
+ padding-top: 60px;
 }
 
 .catalog-main-title {
@@ -416,34 +581,9 @@ padding-top: 100px;
   text-transform: uppercase;
 }
 
-.section-header {
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
 .range {
   font-size: 16px;
   line-height: 22px;
-}
-
-.number {
-  font-size: 45px;
-  font-weight: bold;
-  line-height: 10.06px;
-}
-
-.small-symbol {
-
-}
-
-.section-features {
-  color: #283136;
-}
-
-.number,
-.section-features {
-  line-height: 35px;
 }
 
 .adress-title,
@@ -455,9 +595,7 @@ padding-top: 100px;
   color: #000000;
 }
 
-.number sup {
-  top: -0.25em;
-}
+
 
 .catalog-item,
 .catalog-button {
@@ -482,17 +620,7 @@ padding-top: 100px;
   color: #444444;
 }
 
-.partners a {
-  opacity: 0.6;
-}
 
-.partners a:hover {
-  opacity: 1;
-}
-
-.partners a:active {
-  opacity: 0.3;
-}
 
 .main-footer-adress {
   position: absolute;
