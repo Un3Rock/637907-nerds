@@ -259,8 +259,8 @@ margin-top: 10px;
   border-radius: 50%;
   background-color: #e1e1e1;
   position: absolute;
-  left: 263px;
-  top: 2328px;
+  left: 0px;
+  top: -25px;
   width: 79px;
   height: 79px;
   /* z-index: 9; */
@@ -270,8 +270,8 @@ margin-top: 10px;
   border-radius: 50%;
   background-color: #e1e1e1;
   position: absolute;
-  left: 355px;
-  top: 2328px;
+  left: 90px;
+  top: -25px;
   width: 79px;
   height: 79px;
   /* z-index: 9; */
@@ -281,8 +281,8 @@ margin-top: 10px;
   border-radius: 50%;
   background-color: #e1e1e1;
   position: absolute;
-  left: 445px;
-  top: 2328px;
+  left: 180px;
+  top: -25px;
   width: 79px;
   height: 79px;
   /* z-index: 9; */
@@ -291,6 +291,7 @@ margin-top: 10px;
 .social-list {
   /* display: flex;
   justify-content: space-between; */
+  position: relative;
 
   list-style: none;
 }
@@ -409,7 +410,7 @@ margin-top: 10px;
   background-color: #fb565a;
 
   display: block;
-  width: 240px;
+  width: 220px;
   padding: 13px 0;
 
   font-size: 16px;
@@ -594,6 +595,8 @@ margin-right: -55px;
 }
 
 .partners-list {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
 
@@ -638,7 +641,7 @@ margin-right: -55px;
 
 .vline {
   position: absolute;
-  left: 545px;
+  left: 280px;
   width: 2px;
   height: 50px;
   background-color: rgba(0,0,0,0.3);
@@ -646,11 +649,11 @@ margin-right: -55px;
 }
 
 .partners-list .vline:nth-child(2) {
-  left: 845px;
+  left: 580px;
 }
 
 .partners-list .vline:nth-child(3) {
-  left: 1145px;
+  left: 880px;
 }
 
 .background-title {
@@ -860,6 +863,9 @@ margin-right: -55px;
 .adress,
 .info-text {
   color: #666666;
+  line-height: 19px;
+
+  margin-top:20px;
 }
 
 .footer-title {
@@ -879,18 +885,25 @@ margin-right: -55px;
   margin-top: 10px;
 }
 
-
+.adress-relative {
+  position: relative;
+}
 
 .main-footer-adress {
   position: absolute;
   background: #ffffff;
-  top: 1925px;
+  top: 54px;
 
-  padding: 50px ;
+  padding: 30px ;
+  padding-left: 51px;
 }
 
 .map img {
   width: 100%;
+}
+
+.map {
+  margin-top: 85px;
 }
 
 .sorting button {
