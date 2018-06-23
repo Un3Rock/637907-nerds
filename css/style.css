@@ -255,9 +255,45 @@ margin-top: 10px;
 
 }
 
-/* .social-list {
+.shape-vk {
+  border-radius: 50%;
+  background-color: #e1e1e1;
+  position: absolute;
+  left: 263px;
+  top: 2328px;
+  width: 79px;
+  height: 79px;
+  /* z-index: 9; */
+}
+
+.shape-fb {
+  border-radius: 50%;
+  background-color: #e1e1e1;
+  position: absolute;
+  left: 355px;
+  top: 2328px;
+  width: 79px;
+  height: 79px;
+  /* z-index: 9; */
+}
+
+.shape-inst {
+  border-radius: 50%;
+  background-color: #e1e1e1;
+  position: absolute;
+  left: 445px;
+  top: 2328px;
+  width: 79px;
+  height: 79px;
+  /* z-index: 9; */
+}
+
+.social-list {
+  /* display: flex;
+  justify-content: space-between; */
+
   list-style: none;
-} */
+}
 
 .friendship {
   margin-right: 220px;
@@ -553,7 +589,7 @@ margin-right: -55px;
 }
 
 .partners {
-  margin-top: 85px;
+  margin-top: 33px;
 
 }
 
@@ -564,23 +600,27 @@ margin-right: -55px;
   list-style: none;
 
   padding-left: 30px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  border-top: 2px solid rgba(0,0,0,0.3);
+  border-bottom: 2px solid rgba(0,0,0,0.3);
 }
 
-.partners-list li:nth-child(1) {
+.partners-list li:nth-child(4) {
   margin-top: 10px;
 }
 
-.partners-list li:nth-child(2) {
+.partners-list li:nth-child(5) {
   margin-right: 10px;
-  margin-top: -2px;
+  margin-top: -4px;
 }
 
-.partners-list li:nth-child(3) {
+.partners-list li:nth-child(6) {
   margin-right: 20px;
   margin-top: 10px;
 }
 
-.partners-list li:nth-child(4) {
+.partners-list li:nth-child(7) {
   margin-right: 45px;
 }
 
@@ -594,6 +634,23 @@ margin-right: -55px;
 
 .partners a:active {
   opacity: 0.3;
+}
+
+.vline {
+  position: absolute;
+  left: 545px;
+  width: 2px;
+  height: 50px;
+  background-color: rgba(0,0,0,0.3);
+  transform: translateY(10px);
+}
+
+.partners-list .vline:nth-child(2) {
+  left: 845px;
+}
+
+.partners-list .vline:nth-child(3) {
+  left: 1145px;
 }
 
 .background-title {
@@ -809,6 +866,9 @@ margin-right: -55px;
   font-size: 36px;
   font-weight: bold;
   line-height: 36px;
+  margin-top: 95px;
+  margin-right: 0px;
+  margin-bottom: 0px;
 }
 
 .discount {
@@ -816,6 +876,7 @@ margin-right: -55px;
   font-weight: 400;
   line-height: 22px;
   color: #444444;
+  margin-top: 10px;
 }
 
 
@@ -823,6 +884,9 @@ margin-right: -55px;
 .main-footer-adress {
   position: absolute;
   background: #ffffff;
+  top: 1925px;
+
+  padding: 50px ;
 }
 
 .map img {
