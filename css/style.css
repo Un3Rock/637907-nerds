@@ -172,7 +172,7 @@ img {
   background-repeat: no-repeat;
   background-position: 0 0;
 
-  background-color: #ff0000;
+  /* background-color: #ff0000; */
 }
 
 .logo a:hover {
