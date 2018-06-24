@@ -73,7 +73,16 @@ img {
 
 
 /*-----------------------*/
-
+.button {
+  /* font: inherit; */
+  line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  /*color: #ffffff;
+  background-color: #000000; */
+  border: none;
+}
 
 .main-navigation {
 
@@ -103,6 +112,8 @@ img {
 .user-navigation a {
   color: #000000;
   text-transform: uppercase;
+  display: inline-block;
+  height: 33px;
 }
 
 /* .logo {
@@ -157,7 +168,7 @@ img {
   width: 16px;
   height: 18px;
 
-  background-image: url("img/cart-icon.svg");
+  background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 
@@ -181,7 +192,7 @@ img {
 }
 
 .active {
-  border-bottom: 1px solid #e74246;
+  border-bottom: 3px solid #e74246;
 }
 
 .features {
@@ -206,19 +217,23 @@ img {
   list-style: none;
 }
 
+.service-block {
+  width: 300px;
+}
+
 .service-list .service-block:first-child {
 
-   margin-right: -15px;
+   margin-right: 100px;
 }
 
 .service-list .service-block:nth-child(2) {
 
-   margin-right: 52px;
+   margin-right: 100px;
 }
 
 .service-list .service-block:last-child {
 
-   margin-right: 0px;
+   margin-right: 60px;
 }
 
 /* .service-block img {
@@ -390,16 +405,7 @@ margin-top: 10px;
   transform: translateX(-50%);
 }
 
-.button {
-  /* font: inherit; */
-  line-height: 18px;
-  text-align: center;
-  vertical-align: middle;
-  text-transform: uppercase;
-  /*color: #ffffff;
-  background-color: #000000; */
-  border: none;
-}
+
 
 /* .button:active{
   color: rgba(255,255,255,0.3);
@@ -514,7 +520,7 @@ margin-top: 10px;
 }
 
 .about {
-  margin-top: 120px;
+  margin-top: 115px;
 }
 
 .about-title {
@@ -860,6 +866,8 @@ margin-right: -55px;
   text-transform: uppercase;
 }
 
+
+
 .adress,
 .info-text {
   color: #666666;
@@ -924,9 +932,7 @@ margin-right: -55px;
   color: #444444;
 }
 
-.sorting button {
-  opacity: 0.3;
-}
+
 
 .form-write-us input:focus,
 .form-write-us textarea:focus {
@@ -939,13 +945,7 @@ margin-right: -55px;
   opacity: 0.5;
 }
 
-.sorting button:hover {
-  opacity: 0.6;
-}
 
-.sorting button:active {
-  opacity: 1;
-}
 
 .form-write-us input:invalid,
 .form-write-us textarea:invalid {
@@ -1049,8 +1049,118 @@ button.catalog-active {
   background-color: #eeeeee;
 }
 
-.templates:hover {
+/* .templates:hover {
   box-shadow:  0 0 2px 2px #bfbfbf;
+} */
+
+
+
+.frame {
+
+  height: 616px;
+  background-color: #4d4d4d;
+  opacity: 0.12;
+}
+
+.frame-element {
+  /* height: 14px; */
+  background-color: #ffffff;
+  border-radius: 50%;
+
+}
+
+.frame:hover {
+  /* background-color: #4d4d4d; */
+  opacity: 1;
+}
+
+.slider-slide {
+  position: relative;
+}
+
+.slider-slide:hover {
+  box-shadow:  0 0 2px 2px #bfbfbf;
+}
+
+.templates {
+  /* position: absolute; */
+  top:40px;
+
+}
+
+.sorting button {
+  opacity: 0.3;
+}
+
+.sorting button:hover {
+  opacity: 0.6;
+}
+
+.sorting button:active {
+  opacity: 1;
+}
+
+a.arrow {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 0;
+}
+
+.arrow::before {
+    content: "";
+    display: inline-block;
+    border: 20px solid rgba(0,0,0,0.3);
+    border-right-width: 10px;
+    border-left-width: 10px;
+    border-right-color: transparent;
+    border-left-color: transparent;
+}
+
+.arrow-up::before {
+    border-top-width: 0;
+}
+
+.arrow-down::before {
+    border-bottom-width: 0;
+}
+
+.arrow:hover::before {
+  border: 20px solid rgba(0,0,0,0.6);
+  border-right-width: 10px;
+  border-left-width: 10px;
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+
+.arrow-up:hover::before {
+
+    border-top-width: 0;
+}
+
+.arrow-down:hover::before {
+
+    border-bottom-width: 0;
+}
+
+.arrow:active::before,
+.arrow:focus::before {
+  border: 20px solid rgba(0,0,0,1);
+  border-right-width: 10px;
+  border-left-width: 10px;
+  border-right-color: transparent;
+  border-left-color: transparent;
+}
+
+.arrow-up:active::before,
+.arrow-up:focus::before {
+
+    border-top-width: 0;
+}
+
+.arrow-down:active::before,
+.arrow-down:focus::before {
+
+    border-bottom-width: 0;
 }
 
 .field {
