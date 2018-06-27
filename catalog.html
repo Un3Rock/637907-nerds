@@ -56,76 +56,81 @@
                   </div>
                 </div>
               </fieldset>
-              <h2 class="form-titles">Сетка:</h2>
-              <div class="grid">
-                <label class="">
-                  <input class="" type="radio" name="layout" checked> Адаптивная
-                </label>
-              </div>
-              <div class="grid">
-                <label class="">
-                  <input class="" type="radio" name="layout"> Фиксированная
-                </label>
-              </div>
-              <div class="grid">
-                <label class="">
-                  <input class="" type="radio" name="layout"> Резиновая
-                </label>
-              </div>
-              <h2 class="form-titles">Особенности:</h2>
-              <div class="grid">
-                <label class="">
-                  <input class="" type="checkbox" name="features" checked> Слайдер
-                </label>
-              </div>
-              <div class="grid">
-                <label class="">
-                  <input class="" type="checkbox" name="features" > Блок преимуществ
-                </label>
-              </div>
-              <div class="grid">
-                <label class="">
-                  <input class="" type="checkbox" name="features" checked> Новости
-                </label>
-              </div>
-              <div class="grid">
-                <label class="">
-                  <input class="" type="checkbox" name="features" > Галерея
-                </label>
-              </div>
-              <div class="grid">
-                <label class="">
-                  <input class="" type="checkbox" name="features" > Корзина
-                </label>
-              </div>
+              <fieldset class="grid-item">
+                <legend class="form-titles">Сетка:</legend>
+                <ul>
+                  <li class="grid">
+                    <input class="visually-hidden filter-input-radio" type="radio" name="layout" id="adaptive" checked>
+                    <label for="adaptive" class="">Адаптивная</label>
+                  </li>
+                  <li class="grid">
+                    <input class="visually-hidden filter-input-radio" type="radio" name="layout" id="fix">
+                    <label for="fix" class="">Фиксированная</label>
+                  </li>
+                  <li class="grid">
+                    <input class="visually-hidden filter-input-radio" type="radio" name="layout" id="rubber">
+                    <label for="rubber" class="">Резиновая</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="specificity">
+                <legend class="form-titles">Особенности:</legend>
+                <ul>
+                  <li class="grid">
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="features" id="slider" checked> Слайдер
+                    <label for="slider" class=""></label>
+                  </li>
+                  <li class="grid">
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="features" id="block-advantage"> Блок преимуществ
+                    <label for="block-advantage" class=""></label>
+                  </li>
+                  <li class="grid">
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="features" id="news" checked> Новости
+                    <label for="news" class=""></label>
+                  </li>
+                  <li class="grid">
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="features" id="gallery"> Галерея
+                    <label for="gallery" class=""></label>
+                  </li>
+                  <li class="grid">
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="features" id="basket"> Корзина
+                    <label for="basket" class=""></label>
+                  </li>
+              </ul>
+              </fieldset>
               <button class="button show" type="submit">ПОКАЗАТЬ</button>
             </form>
           </div>
-          <div>
+
             <section class="catalog-sorting">
               <div class="sorting-navigation">
                 <h2 class="catalog-titles">Сортировать:</h2>
                 <div class="sorting">
-                  <button class="button">ПО ЦЕНЕ</button>
-                  <button class="button">ПО ТИПУ</button>
-                  <button class="button">ПО НАЗВАНИЮ</button>
+                  <a class="button sort">ПО ЦЕНЕ</a>
+                  <a class="button sort">ПО ТИПУ</a>
+                  <a class="button sort">ПО НАЗВАНИЮ</a>
 
-                  <div>
-                    <a class="arrow arrow-up" href="#">вверх</a>
+                  <div class="arrows">
                     <a class="arrow arrow-down" href="#">вниз</a>
+                    <a class="arrow arrow-up" href="#">вверх</a>
+
                   </div>
                 </div>
               </div>
               <div class="catalog-slider">
                 <div class="slider-inner">
                   <ul class="slider-slides">
-                    <li class="list-element">
-                      <a>
+                    <li class="list-elem">
+                      <a class="list-element" href="#">
 
                           <div class="frame">
-                            <span class="circle"></span>
-                            <span class="circle"></span>
-                            <span class="circle"></span>
+                            <div class="frame-part">
+                              <div class="part-flex">
+                                <span class="circle"></span>
+                                <span class="circle"></span>
+                                <span class="circle"></span>
+                              </div>
+                            </div>
                           </div>
                           <img class="templates" src="img/sedona.jpg" alt="sedona">
                           <div class="popup">
@@ -136,8 +141,8 @@
 
                       </a>
                     </li>
-                    <li class="list-element">
-                      <a>
+                    <li class="list-elem">
+                      <a class="list-element" href="#">
 
                           <div class="frame">
                             <span class="circle"></span>
@@ -154,8 +159,8 @@
 
                       </a>
                     </li>
-                    <li class="list-element">
-                      <a>
+                    <li class="list-elem">
+                      <a class="list-element" href="#">
 
                           <div class="frame">
                             <span class="circle"></span>
@@ -172,8 +177,8 @@
 
                       </a>
                     </li>
-                    <li class="list-element">
-                      <a>
+                    <li class="list-elem">
+                      <a class="list-element" href="#">
 
                           <div class="frame">
                             <span class="circle"></span>
@@ -190,8 +195,8 @@
 
                       </a>
                     </li>
-                    <li class="list-element">
-                      <a>
+                    <li class="list-elem">
+                      <a class="list-element" href="#">
 
                           <div class="frame">
                             <span class="circle"></span>
@@ -208,8 +213,8 @@
 
                       </a>
                     </li>
-                    <li class="list-element">
-                      <a>
+                    <li class="list-elem">
+                      <a class="list-element" href="#">
 
                           <div class="frame">
                             <span class="circle"></span>
@@ -228,16 +233,16 @@
                     </li>
                   </ul>
                   </div>
-                  <div class="catalog-navigation">
-                    <button class="button catalog-button catalog-active" >1</button>
-                    <button class="button catalog-button">2</button>
-                    <button class="button catalog-button">3</button>
-                    <button class="button catalog-button">СЛЕДУЮЩАЯ</button>
-                  </div>
+                  <ul class="catalog-navigation">
+                    <li><a class="button pagination catalog-active" href="#">1</a></li>
+                    <li><a class="button pagination" href="#">2</a></li>
+                    <li><a class="button pagination" href="#">3</a></li>
+                    <li><a class="button pagination-next" href="#">СЛЕДУЮЩАЯ</a ></li>
+                  </ul>
 
               </div>
             </section>
-          </div>
+
         </div>
       </div>
     </main>
@@ -251,6 +256,34 @@
             тел. +7(812) 275-75-75</p>
             <button class="button seemore">НАПИШИТЕ НАМ</button>
           </div>
+          <div class="container">
+            <div class="visually-hidden1">
+              <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
+
+                <!-- <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button> -->
+                <fieldset class="write-us-frame">
+                  <legend class="write-us">Напишите нам</legend>
+                  <div class="container-modal">
+                    <div class="modal-flex">
+                      <div class="modal-block">
+                        <label for="name-field">Ваше имя:</label>
+                        <input type="text" id="name-field" name="name" value="" placeholder="Имя Фамилия" >
+                      </div>
+                      <div class="modal-block">
+                        <label for="email-field">Ваш e-mail:</label>
+                        <input type="text" id="email-field" name="name" value="" placeholder="email@example.com" required>
+                      </div>
+                      <div class="modal-block">
+                        <label for="comment-field">Текст письма:</label>
+                        <textarea class="text-field" name="comment" id="comment-field" rows="10" placeholder="В свободной форме" disabled></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+                <button class="button seemore send">ОТПРАВИТЬ</button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
       <div class="map">
@@ -263,15 +296,19 @@
             <div>
               <ul class="social-list">
                 <li class="social-item shape-vk">
-                  <a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span>
+                  <a class="social-button" href="#">
+                    <img class="vk-icon" src="img/vk-icon.svg" alt=""><span class="visually-hidden">Вконтакте</span>
                   </a>
                 </li>
                 <li class="social-item shape-fb">
-                  <a class="social-button" href="#"><span class="visually-hidden">Facebook</span>
+                  <a class="social-button" href="#">
+                    <img class="fb-icon" src="img/fb-icon.svg" alt=""><span class="visually-hidden">Facebook</span>
                   </a>
                 </li>
                 <li class="social-item shape-inst">
-                  <a class="social-button" href="#"><span class="visually-hidden">Instagram</span></a>
+                  <a class="social-button" href="#">
+                    <img class="insta-icon" src="img/insta-icon.svg" alt=""><span class="visually-hidden">Instagram</span>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -283,20 +320,5 @@
         </div>
       </section>
     </footer>
-    <div class="container">
-      <div class="visually-hidden">
-        <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-        <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
-          <p class="write-us">НАПИШИТЕ НАМ</p>
-          <label for="name-field">Ваше имя:</label>
-          <input type="text" id="name-field" name="name" value="" placeholder="Имя Фамилия" >
-          <label for="email-field">Ваш e-mail:</label>
-          <input type="text" id="email-field" name="name" value="" placeholder="email@example.com" required>
-          <label for="comment-field">Текст письма:</label>
-          <textarea name="comment" id="comment-field" rows="10" placeholder="В свободной форме" disabled></textarea>
-          <button class="button seemore">ОТПРАВИТЬ</button>
-        </form>
-      </div>
-    </div>
   </body>
 </html>
