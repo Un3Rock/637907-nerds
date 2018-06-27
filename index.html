@@ -185,13 +185,13 @@
             <p class="adress">191186, Санкт-Петербург<br>
             ул. Б. Конюшенная, д. 19/8<br><br>
             тел. +7(812) 275-75-75</p>
-            <button class="button seemore">НАПИШИТЕ НАМ</button>
+            <button class="button seemore write-to-us">НАПИШИТЕ НАМ</button>
           </div>
           <div class="container">
-            <div class="visually-hidden1">
+            <!-- <div class="visually-hidden1"> -->
               <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
 
-                <!-- <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button> -->
+                <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
                 <fieldset class="write-us-frame">
                   <legend class="write-us">Напишите нам</legend>
                   <div class="container-modal">
@@ -213,7 +213,7 @@
                 </fieldset>
                 <button class="button seemore send">ОТПРАВИТЬ</button>
               </form>
-            </div>
+            <!-- </div> -->
           </div>
         </div>
       </div>
@@ -251,6 +251,23 @@
         </div>
       </section>
     </footer>
+
+    <script>
+      var write = document.querySelector(".write-to-us");
+
+      var popup = document.querySelector(".form-write-us");
+      var close = popup.querySelector(".modal-close");
+
+      write.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("form-write-us-show");
+      });
+
+      close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("form-write-us-show");
+      });
+    </script>
 
   </body>
 </html>

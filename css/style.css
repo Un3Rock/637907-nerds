@@ -1470,10 +1470,15 @@ a.arrow {
   font-weight: 700;
 }
 
+
+
 .form-write-us {
-  position: absolute;
-  top:-140px;
-  left:100px;
+  position: fixed;
+
+  display: none;
+
+  top:150px;
+  left:450px;
 
   width: 780px;
   height: 410px;
@@ -1485,6 +1490,11 @@ a.arrow {
   box-shadow: 0 0 10px 10px #bfbfbf;
 }
 
+.form-write-us-show {
+  display: block;
+}
+
+
 .write-us {
   font-size: 45px;
   line-height: 45px;
@@ -1493,7 +1503,7 @@ a.arrow {
   margin-bottom: 30px;
 }
 
-.write-us::after {
+/* .write-us::after {
   content: "";
 
   position: absolute;
@@ -1501,16 +1511,32 @@ a.arrow {
   left: 849px;
 
   width: 21px;
-  height: 21px;
+  height: 21px; */
 
   /* background-color: green; */
+  /* background-image: url("../img/close-cross.svg"); */
+  /* background-repeat: no-repeat;
+  background-position: 0 0;
+} */
+
+.modal-close {
+  position: absolute;
+  top: 85px;
+  left: 849px;
+
+  width: 21px;
+  height: 21px;
+
+  background-color: #ffffff;
   background-image: url("../img/close-cross.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  border: none;
 }
 
 .modal-close {
-  color:red;
+  /* color:red; */
   opacity: 0.6;
 }
 
