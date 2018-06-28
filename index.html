@@ -198,11 +198,11 @@
                     <div class="modal-flex">
                       <div class="modal-block">
                         <label for="name-field">Ваше имя:</label>
-                        <input type="text" id="name-field" name="name" value="" placeholder="Имя Фамилия" >
+                        <input class="check" type="text" id="name-field" name="name" value="" placeholder="Имя Фамилия">
                       </div>
                       <div class="modal-block">
                         <label for="email-field">Ваш e-mail:</label>
-                        <input type="text" id="email-field" name="name" value="" placeholder="email@example.com" required>
+                        <input type="text" id="email-field" name="email" value="" placeholder="email@example.com">
                       </div>
                       <div class="modal-block">
                         <label for="comment-field">Текст письма:</label>
@@ -211,7 +211,7 @@
                     </div>
                   </div>
                 </fieldset>
-                <button class="button seemore send">ОТПРАВИТЬ</button>
+                <button class="button seemore send" type="submit">ОТПРАВИТЬ</button>
               </form>
             <!-- </div> -->
           </div>
@@ -257,16 +257,60 @@
 
       var popup = document.querySelector(".form-write-us");
       var close = popup.querySelector(".modal-close");
+      var form = popup.querySelector("form");
+      var nick = popup.querySelector("[name=name]");
+      var mail = popup.querySelector("[name=email]");
+
+      var isStorageSupport = true;
+      var storage = "";
+
+      try {
+        storage = localStorage.getItem("nick");
+      } catch (err) {
+        isStorageSupport = false;
+      }
 
       write.addEventListener("click", function (evt) {
         evt.preventDefault();
         popup.classList.add("form-write-us-show");
+
+        if (storage) {
+          nick.value = storage;
+          mail.focus();
+        } else {
+          nick.focus();
+        }
+        console.log("focus");
       });
 
       close.addEventListener("click", function (evt) {
         evt.preventDefault();
         popup.classList.remove("form-write-us-show");
+        popup.classList.remove("form-write-us-error");
       });
+
+      form.addEventListener("submit", function (evt) {
+        if (!nick.value || !mail.value) {
+          evt.preventDefault();
+          popup.classList.remove("form-write-us-error");
+          popup.offsetWidth = popup.offsetWidth;
+          popup.classList.add("form-write-us-error");
+          console.log("Нужно ввести логин и пароль");
+        } else {
+          if (isStorageSupport) {
+            localStorage.setItem("nick", nick.value);
+          }
+    }
+  });
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("form-write-us-show")) {
+        popup.classList.remove("form-write-us-show");
+        popup.classList.remove("form-write-us-error");
+      }
+    }
+  });
     </script>
 
   </body>

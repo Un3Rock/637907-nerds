@@ -1145,7 +1145,7 @@ input[type="radio"].visually-hidden {
 
 .form-write-us input:focus,
 .form-write-us textarea:focus {
-
+  color: #000000;
 }
 
 .form-write-us input:focus::placeholder,
@@ -1470,7 +1470,45 @@ a.arrow {
   font-weight: 700;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
 
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
 
 .form-write-us {
   position: fixed;
@@ -1492,8 +1530,13 @@ a.arrow {
 
 .form-write-us-show {
   display: block;
+
+  animation: bounce 0.6s;
 }
 
+.form-write-us-error {
+  animation: shake 0.6s;
+}
 
 .write-us {
   font-size: 45px;
