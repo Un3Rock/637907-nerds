@@ -829,7 +829,7 @@ input[type="radio"].visually-hidden {
 }
 
 .form-titles {
-  margin-top: 55px;
+  margin-top: 45px;
   margin-bottom: 0px;
 }
 
@@ -975,12 +975,12 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   left: -30px;
-  top: -1px;
+  top: 0px;
 
   width: 25px;
   height: 25px;
 
-  border: 2px solid #000000;
+  border: 7px solid #000000;
   border-radius: 50%;
 }
 
@@ -994,8 +994,8 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-  top: 5px;
-  left: -24px;
+  top: 6px;
+  left: -25px;
 
   width: 8px;
   height: 8px;
@@ -1007,8 +1007,8 @@ input[type="radio"].visually-hidden {
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -34px;
-  top: 0px;
+  left: -35px;
+  top: -1px;
 
   width: 27px;
   height: 23px;
@@ -1022,7 +1022,7 @@ input[type="radio"].visually-hidden {
 
 .filter-input-checkbox:checked + label::before {
 
-  left: -32px;
+  left: -33px;
   /* background-color: green;  */
   background-image: url("../img/checkbox-on.svg");
 }
@@ -1048,7 +1048,7 @@ input[type="radio"].visually-hidden {
 }
 
 .form-titles + ul {
-  margin-top: 0px;
+  margin-top: -2px;
   margin-left: 32px;
 }
 
@@ -1123,11 +1123,21 @@ input[type="radio"].visually-hidden {
   /* margin-left: 45px; */
   padding:  30px 48px 48px 51px;
   /* padding-left: 51px; */
+  z-index: 3;
+}
+
+.map iframe {
+  position: relative;
+  z-index: 2;
+
+  border: none;
 }
 
 .map img {
   width: 100%;
   height: 416px;
+  position: relative;
+  z-index: 0;
 }
 
 .map {
@@ -1203,7 +1213,7 @@ button.catalog-active {
 
 .grid {
   margin-left: 2px;
-  padding-top: 20px;
+  padding-top: 19px;
   padding-bottom: 2px;
   opacity: 0.6;
   font-size: 16px;
@@ -1278,16 +1288,13 @@ button.catalog-active {
 }
 
 .show {
-  font-weight: 500;
-}
-
-.show {
   display: block;
   width: 260px;
   padding: 13px 0;
-  margin-top: 50px;
+  margin-top: 48px;
 
   border-radius: 3px;
+  font-weight: 500;
 }
 
 .price {
