@@ -187,34 +187,7 @@
             тел. +7(812) 275-75-75</p>
             <button class="button seemore write-to-us">НАПИШИТЕ НАМ</button>
           </div>
-          <div class="container">
-            <!-- <div class="visually-hidden1"> -->
-              <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
 
-                <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-                <fieldset class="write-us-frame">
-                  <legend class="write-us">Напишите нам</legend>
-                  <div class="container-modal">
-                    <div class="modal-flex">
-                      <div class="modal-block">
-                        <label for="name-field">Ваше имя:</label>
-                        <input class="check" type="text" id="name-field" name="name" value="" placeholder="Имя Фамилия">
-                      </div>
-                      <div class="modal-block">
-                        <label for="email-field">Ваш e-mail:</label>
-                        <input type="text" id="email-field" name="email" value="" placeholder="email@example.com">
-                      </div>
-                      <div class="modal-block">
-                        <label for="comment-field">Текст письма:</label>
-                        <textarea class="text-field" name="comment" id="comment-field" rows="10" placeholder="В свободной форме" disabled></textarea>
-                      </div>
-                    </div>
-                  </div>
-                </fieldset>
-                <button class="button seemore send" type="submit">ОТПРАВИТЬ</button>
-              </form>
-            <!-- </div> -->
-          </div>
         </div>
       </div>
       <div class="map">
@@ -251,6 +224,35 @@
         </div>
       </section>
     </footer>
+
+    <div class="container popup">
+      <!-- <div class="visually-hidden1"> -->
+        <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
+
+          <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+          <fieldset class="write-us-frame">
+            <legend class="write-us">Напишите нам</legend>
+            <div class="container-modal">
+              <div class="modal-flex">
+                <div class="modal-block">
+                  <label for="name-field">Ваше имя:</label>
+                  <input class="check" type="text" id="name-field" name="name" value="" placeholder="Имя Фамилия">
+                </div>
+                <div class="modal-block">
+                  <label for="email-field">Ваш e-mail:</label>
+                  <input type="text" id="email-field" name="email" value="" placeholder="email@example.com">
+                </div>
+                <div class="modal-block">
+                  <label for="comment-field">Текст письма:</label>
+                  <textarea class="text-field" name="comment" id="comment-field" rows="10" placeholder="В свободной форме" disabled></textarea>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <button class="button seemore send" type="submit">ОТПРАВИТЬ</button>
+        </form>
+      <!-- </div> -->
+    </div>
 
     <script>
       var write = document.querySelector(".write-to-us");

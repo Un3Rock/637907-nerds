@@ -344,11 +344,9 @@ width: 250px;
 }
 
 .social-list {
-  /* display: flex;
-  justify-content: space-between; */
-  position: relative;
-
-  list-style: none;
+    position: relative;
+    list-style: none;
+    display: flex;
 }
 
 .friendship {
@@ -875,7 +873,7 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   height: 41px;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
@@ -979,8 +977,8 @@ input[type="radio"].visually-hidden {
   left: -30px;
   top: -1px;
 
-  width: 16px;
-  height: 16px;
+  width: 25px;
+  height: 25px;
 
   border: 2px solid #000000;
   border-radius: 50%;
@@ -1009,8 +1007,8 @@ input[type="radio"].visually-hidden {
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -30px;
-  top: -20px;
+  left: -34px;
+  top: 0px;
 
   width: 27px;
   height: 23px;
@@ -1024,7 +1022,8 @@ input[type="radio"].visually-hidden {
 
 .filter-input-checkbox:checked + label::before {
 
-  / background-color: green; /
+  left: -32px;
+  /* background-color: green;  */
   background-image: url("../img/checkbox-on.svg");
 }
 
@@ -1049,7 +1048,7 @@ input[type="radio"].visually-hidden {
 }
 
 .form-titles + ul {
-  margin-top: -4px;
+  margin-top: 0px;
   margin-left: 32px;
 }
 
@@ -1203,6 +1202,7 @@ button.catalog-active {
 
 
 .grid {
+  margin-left: 2px;
   padding-top: 20px;
   padding-bottom: 2px;
   opacity: 0.6;
