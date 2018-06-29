@@ -133,7 +133,7 @@
                             </div>
                           </div>
                           <img class="templates" src="img/sedona.jpg" alt="sedona">
-                          <div class="popup">
+                          <div class="popup-slide">
                             <h3 class="catalog-item">SEDONA</h3>
                             <p class="info-text">Информационный сайт для туристов</p>
                             <button class="button price">9 900 РУБ.</button>
@@ -155,7 +155,7 @@
                         </div>
                           <img class="templates" src="img/pink.jpg" alt="pink">
 
-                          <div class="popup">
+                          <div class="popup-slide">
                             <h3 class="catalog-item">PINK</h3>
                             <p class="info-text">Продуктовый лендинг приложения для IOS и Android</p>
                             <button class="button price">9 900 РУБ.</button>
@@ -177,7 +177,7 @@
                         </div>
                           <img class="templates" src="img/barbershop.jpg" alt="borodinski">
 
-                          <div class="popup">
+                          <div class="popup-slide">
                             <h3 class="catalog-item">BORODINSKI</h3>
                             <p class="info-text">Сайт салона красоты. Для мужчин, да.</p>
                             <button class="button price">9 900 РУБ.</button>
@@ -199,7 +199,7 @@
                         </div>
                           <img class="templates" src="img/mishka.jpg" alt="mishka">
 
-                          <div class="popup">
+                          <div class="popup-slide">
                             <h3 class="catalog-item">MISHKA</h3>
                             <p class="info-text">Интернет-магазин вязанных игрушек</p>
                             <button class="button price">9 900 РУБ.</button>
@@ -221,7 +221,7 @@
                         </div>
                           <img  class="templates" src="img/A+.jpg" alt="A+">
 
-                          <div class="popup">
+                          <div class="popup-slide">
                             <h3 class="catalog-item">A+</h3>
                             <p class="info-text">Лендинг курсов повышения квалификации</p>
                             <button class="button price">9 900 РУБ.</button>
@@ -243,7 +243,7 @@
                         </div>
                           <img class="templates" src="img/kvast.jpg" alt="kvast">
 
-                          <div class="popup">
+                          <div class="popup-slide">
                             <h3 class="catalog-item">KVAST</h3>
                             <p class="info-text">Промо-сайт производителей крафтового кваса</p>
                             <button class="button price">9 900 РУБ.</button>
@@ -276,34 +276,7 @@
             тел. +7(812) 275-75-75</p>
             <button class="button seemore write-to-us">НАПИШИТЕ НАМ</button>
           </div>
-          <div class="container">
-            <!-- <div class="visually-hidden1"> -->
-              <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
 
-                <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-                <fieldset class="write-us-frame">
-                  <legend class="write-us">Напишите нам</legend>
-                  <div class="container-modal">
-                    <div class="modal-flex">
-                      <div class="modal-block">
-                        <label for="name-field">Ваше имя:</label>
-                        <input class="check" type="text" id="name-field" name="name" value="" placeholder="Имя Фамилия">
-                      </div>
-                      <div class="modal-block">
-                        <label for="email-field">Ваш e-mail:</label>
-                        <input type="text" id="email-field" name="email" value="" placeholder="email@example.com">
-                      </div>
-                      <div class="modal-block">
-                        <label for="comment-field">Текст письма:</label>
-                        <textarea class="text-field" name="comment" id="comment-field" rows="10" placeholder="В свободной форме" disabled></textarea>
-                      </div>
-                    </div>
-                  </div>
-                </fieldset>
-                <button class="button seemore send" type="submit">ОТПРАВИТЬ</button>
-              </form>
-            <!-- </div> -->
-          </div>
         </div>
       </div>
       <div class="map">
@@ -341,21 +314,94 @@
       </section>
     </footer>
 
+    <div class="container popup">
+      <!-- <div class="visually-hidden1"> -->
+        <form class="form-write-us" action="https://echo.htmlacademy.ru" method="post">
+
+          <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+          <fieldset class="write-us-frame">
+            <legend class="write-us">Напишите нам</legend>
+            <div class="container-modal">
+              <div class="modal-flex">
+                <div class="modal-block">
+                  <label for="name-field">Ваше имя:</label>
+                  <input class="check" type="text" id="name-field" name="name" value="" placeholder="Имя Фамилия">
+                </div>
+                <div class="modal-block">
+                  <label for="email-field">Ваш e-mail:</label>
+                  <input type="text" id="email-field" name="email" value="" placeholder="email@example.com" required>
+                </div>
+                <div class="modal-block">
+                  <label for="comment-field">Текст письма:</label>
+                  <textarea class="text-field" name="comment" id="comment-field" rows="10" placeholder="В свободной форме" disabled></textarea>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <button class="button seemore send" type="submit">ОТПРАВИТЬ</button>
+        </form>
+      <!-- </div> -->
+    </div>
+
     <script>
       var write = document.querySelector(".write-to-us");
 
-      var popup = document.querySelector(".form-write-us");
+      var popup = document.querySelector(".popup");
       var close = popup.querySelector(".modal-close");
+      var form = popup.querySelector("form");
+      var nick = popup.querySelector("[name=name]");
+      var mail = popup.querySelector("[name=email]");
+
+      var isStorageSupport = true;
+      var storage = "";
+
+      try {
+        storage = localStorage.getItem("nick");
+      } catch (err) {
+        isStorageSupport = false;
+      }
 
       write.addEventListener("click", function (evt) {
         evt.preventDefault();
-        popup.classList.add("form-write-us-show");
+        popup.classList.add("popup-show");
+
+        if (storage) {
+          nick.value = storage;
+          mail.focus();
+        } else {
+          nick.focus();
+        }
+        console.log("focus");
       });
 
       close.addEventListener("click", function (evt) {
         evt.preventDefault();
-        popup.classList.remove("form-write-us-show");
+        popup.classList.remove("popup-show");
+        popup.classList.remove("popup-error");
       });
+
+      form.addEventListener("submit", function (evt) {
+        if (!nick.value || !mail.value) {
+          evt.preventDefault();
+          popup.classList.remove("popup-error");
+          popup.offsetWidth = popup.offsetWidth;
+          popup.classList.add("popup-error");
+          console.log("Нужно ввести логин и пароль");
+        } else {
+          if (isStorageSupport) {
+            localStorage.setItem("nick", nick.value);
+          }
+    }
+  });
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("popup-show")) {
+        popup.classList.remove("popup-show");
+        popup.classList.remove("popup-error");
+      }
+    }
+  });
     </script>
   </body>
 </html>

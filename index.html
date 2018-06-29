@@ -240,7 +240,7 @@
                 </div>
                 <div class="modal-block">
                   <label for="email-field">Ваш e-mail:</label>
-                  <input type="text" id="email-field" name="email" value="" placeholder="email@example.com">
+                  <input type="text" id="email-field" name="email" value="" placeholder="email@example.com" >
                 </div>
                 <div class="modal-block">
                   <label for="comment-field">Текст письма:</label>
@@ -257,7 +257,7 @@
     <script>
       var write = document.querySelector(".write-to-us");
 
-      var popup = document.querySelector(".form-write-us");
+      var popup = document.querySelector(".popup");
       var close = popup.querySelector(".modal-close");
       var form = popup.querySelector("form");
       var nick = popup.querySelector("[name=name]");
@@ -274,7 +274,7 @@
 
       write.addEventListener("click", function (evt) {
         evt.preventDefault();
-        popup.classList.add("form-write-us-show");
+        popup.classList.add("popup-show");
 
         if (storage) {
           nick.value = storage;
@@ -287,16 +287,16 @@
 
       close.addEventListener("click", function (evt) {
         evt.preventDefault();
-        popup.classList.remove("form-write-us-show");
-        popup.classList.remove("form-write-us-error");
+        popup.classList.remove("popup-show");
+        popup.classList.remove("popup-error");
       });
 
       form.addEventListener("submit", function (evt) {
         if (!nick.value || !mail.value) {
           evt.preventDefault();
-          popup.classList.remove("form-write-us-error");
+          popup.classList.remove("popup-error");
           popup.offsetWidth = popup.offsetWidth;
-          popup.classList.add("form-write-us-error");
+          popup.classList.add("popup-error");
           console.log("Нужно ввести логин и пароль");
         } else {
           if (isStorageSupport) {
@@ -307,9 +307,9 @@
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
-      if (popup.classList.contains("form-write-us-show")) {
-        popup.classList.remove("form-write-us-show");
-        popup.classList.remove("form-write-us-error");
+      if (popup.classList.contains("popup-show")) {
+        popup.classList.remove("popup-show");
+        popup.classList.remove("popup-error");
       }
     }
   });
