@@ -6,8 +6,21 @@ var form = popup.querySelector("form");
 var nick = popup.querySelector("[name=name]");
 var mail = popup.querySelector("[name=email]");
 
+var sliderControls = document.querySelectorAll('.slider-controls i');
+
 var isStorageSupport = true;
 var storage = "";
+
+for (var i=0; i<sliderControls.length; i++) {
+	sliderControls[i].addEventListener("click", function (evt) {
+		evt.preventDefault();
+
+		for (var i=0; i<sliderControls.length; i++) {
+			sliderControls[i].classList.remove("active-element");
+		}
+		this.classList.add("active-element");
+});
+}
 
 try {
   storage = localStorage.getItem("nick");

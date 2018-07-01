@@ -146,8 +146,12 @@ img {
 }
 
 .features {
-  display: flex;
+  display: none;
   justify-content: space-between;
+}
+
+.active-slide {
+  display: flex;
 }
 
 .service-list {
