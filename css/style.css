@@ -936,6 +936,9 @@ input[type="radio"].visually-hidden {
 
 .info-text {
   width: 200px;
+  max-height: 140px;
+  min-height: 100px;
+  overflow: auto;
   padding:0 80px;
   margin-top:10px;
   color: #666666;
@@ -1171,7 +1174,7 @@ button.catalog-active {
   background-color: #eeeeee;
 }
 
-a:hover .popup-slide {
+.list-element:hover .popup-slide {
   display: block;
 }
 
@@ -1220,7 +1223,7 @@ a:hover .popup-slide {
   margin-left: 20px;
 }
 
- a:hover .frame{
+ .list-element:hover .frame{
   opacity: 1;
 }
 
