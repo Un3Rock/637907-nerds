@@ -180,7 +180,7 @@ img {
 }
 
 .service-list {
-  padding-top: 70px;
+  padding-top: 75px;
 }
 
 .service-item {
@@ -260,12 +260,12 @@ img {
   background-color: #d7373b;
 }
 
-.vk-icon:active,
-.fb-icon:active,
-.insta-icon:active,
-.vk-icon:focus,
-.fb-icon:focus,
-.insta-icon:focus{
+.shape-vk:active .vk-icon,
+.shape-fb:active .fb-icon,
+.shape-inst:active .insta-icon,
+.shape-vk:focus .vk-icon,
+.shape-fb:focus .fb-icon,
+.shape-inst:focus .insta-icon{
   opacity: 0.3;
 }
 
@@ -273,7 +273,7 @@ img {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 80px;
+  margin-top: 60px;
   padding-left: 0px;
   list-style: none;
 }
@@ -312,6 +312,7 @@ img {
   display: inline-block;
   width: 18px;
   height: 18px;
+  margin-top: 10px;
   padding: 8px;
   border-radius: 50%;
   cursor: pointer;
@@ -359,7 +360,7 @@ img {
   display: block;
   width: 240px;
   padding: 13px 0;
-  margin-top: 37px;
+  margin-top: 39px;
   color: #ffffff;
   font-size: 16px;
   border-radius: 3px;
@@ -480,8 +481,8 @@ img {
   position: absolute;
   width: 25px;
   height: 1px;
-  top: 12px;
-  left: -35px;
+  top: 7px;
+  left: -34px;
   border-bottom: 2px solid red;
 }
 
@@ -543,7 +544,7 @@ img {
 }
 
 .partners {
-  margin-top: 33px;
+  margin-top: 45px;
 }
 
 .partners-list {
@@ -666,6 +667,7 @@ input[type="radio"].visually-hidden {
 .catalog-sorting {
   width: 760px;
   margin-top: 35px;
+  margin-bottom: -10px;
   padding-left: 20px;
   padding-right: 0px;
 }
@@ -685,16 +687,33 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.sorting li:first-child {
+  margin-top: -1px;
+}
+
 .arrows {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  margin-left: 5px;
   list-style: none;
 }
 
 .sort {
   margin-right: 24px;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.sort:hover {
+  opacity: 0.6;
+  background-color: #ffffff;
+}
+
+.sort:active,
+.sort:focus {
+  opacity: 1;
 }
 
 .sorting .sort:nth-child(3) {
@@ -855,8 +874,8 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-input:disabled + label {
-  color: #000000;
-  opacity: 0.5;
+  color: #283136;
+  opacity: 0.3;
 }
 
 .filter-input-radio:checked + label::after {
@@ -888,8 +907,8 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-input:disabled + label {
-  color: #000000;
-  opacity: 0.5;
+  color: #283136;
+  opacity: 0.3;
 }
 
 .specificity ul{
@@ -928,7 +947,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-items {
-  margin-top: 22px;
+  margin-top: 30px;
 }
 
 .adress {
@@ -1059,16 +1078,25 @@ button.catalog-active {
   margin-left: 2px;
   padding-top: 19px;
   padding-bottom: 2px;
-  opacity: 0.6;
   font-size: 16px;
   line-height: 20px;
 }
 
-.grid:hover {
-  opacity: 1;
+.grid label,
+.grid label::before,
+.grid label::after{
+  color: #283136;
 }
 
-.grid:disabled {
+.grid label:hover,
+.grid label:hover::before,
+.grid label:hover::after {
+  color: #000000;
+}
+
+.grid label:disabled,
+.grid label:disabled::before,
+.grid label:disabled::after {
   opacity: 0.3;
 }
 
@@ -1092,10 +1120,12 @@ button.catalog-active {
 .catalog-navigation {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 25px;
+  margin-top: 23px;
+  margin-left: -1px;
   padding: 0;
-  padding-left: 2px;
+  padding-left: 0px;
   list-style: none;
+  font-weight: 500;
 }
 
 .pagination {
@@ -1124,13 +1154,17 @@ button.catalog-active {
 }
 
 .catalog-active {
+  height: 46px;
+  width: 45px;
+  margin-top: -1px;
   background-color: #ffffff;
-  border: 2px solid #eeeeee;
+  border: 3px solid #eeeeee;
 }
 
 .catalog-active:hover,
 .pagination:hover,
-.pagination-next:hover {
+.pagination-next:hover,
+.show:hover {
   background-color: #dfdfdf;
 }
 
@@ -1142,6 +1176,7 @@ button.catalog-active {
 .pagination-next:focus,
 .show:active,
 .show:focus {
+  color: rgba(0, 0, 0, 0.3);
   background-color: #dfdfdf;
   box-shadow: inset 0 2px 0 0 #bfbfbf;
 }
@@ -1183,7 +1218,7 @@ button.catalog-active {
 }
 
 .list-elem {
-  padding-bottom: 25px;
+  padding-bottom: 35px;
 }
 
 .list-element {
@@ -1218,7 +1253,7 @@ button.catalog-active {
   height: 13px;
   width: 13px;
   margin-left: 9px;
-  margin-top: 11px;
+  margin-top: 15px;
   background-color: #ffffff;
   border-radius: 50%;
 }
@@ -1231,21 +1266,17 @@ button.catalog-active {
   opacity: 1;
 }
 
-.sorting button {
-  opacity: 0.3;
+.sorting li:nth-child(3) {
+  margin-right: 18px;
 }
 
-.sorting button:hover {
-  opacity: 0.6;
-}
-
-.sorting button:active {
-  opacity: 1;
+.arrows li:first-child {
+  margin-right: 4px;
 }
 
 a.arrow {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 5px;
   font-size: 0;
 }
 
@@ -1350,13 +1381,14 @@ a.arrow {
   position: fixed;
   display: none;
   top:150px;
-  left:450px;
-  width: 780px;
+  left:720px;
+  width: 800px;
   height: 410px;
-  padding: 85px;
-  padding-top: 75px;
+  padding: 80px;
+  padding-top: 68px;
   background-color: #ffffff;
-  box-shadow: 0 0 10px 10px #bfbfbf;
+  box-shadow: 0px 20px 40px 0px rgba(0, 1, 0, 0.75);
+  z-index: 3;
 }
 
 .popup-show {
@@ -1377,8 +1409,8 @@ a.arrow {
 
 .modal-close {
   position: absolute;
-  top: 85px;
-  left: 849px;
+  top: 82px;
+  left: 846px;
   width: 21px;
   height: 21px;
   background-color: #ffffff;
@@ -1386,9 +1418,6 @@ a.arrow {
   background-repeat: no-repeat;
   background-position: 0 0;
   border: none;
-}
-
-.modal-close {
   opacity: 0.6;
 }
 
@@ -1407,6 +1436,7 @@ a.arrow {
 .write-us-frame label {
   display: block;
   font-weight: 700;
+  margin-bottom: 6px;
 }
 
 .container-modal {
@@ -1416,6 +1446,7 @@ a.arrow {
 .modal-flex {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 0px;
 }
 
 .modal-flex .modal-block:first-child {
@@ -1423,21 +1454,27 @@ a.arrow {
 }
 
 .modal-flex .modal-block:last-child {
-  margin-top: 30px;
+  margin-top: 34px;
 }
 
 .modal-block input{
-  width: 360px;
-  line-height: 50px;
+  width: 340px;
+  height: 42px;
+  padding-left: 16px;
+  line-height: 45px;
 }
 
 .modal-block textarea{
-  width: 760px;
-  height: 120px;
+  width: 744px;
+  height: 114px;
+  padding-left: 16px;
+  line-height: 40px;
+  background-color: #ffffff;
+  resize: vertical;
 }
 
 .send {
   width: 260px;
   margin-left: 15px;
-  margin-top: 30px;
+  margin-top: 29px;
 }
