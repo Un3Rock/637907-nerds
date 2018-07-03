@@ -1037,14 +1037,15 @@ input[type="radio"].visually-hidden {
 }
 
 .form-write-us input:hover,
-.form-write-us textarea:hover
-{
+.form-write-us textarea:hover {
   color: #444444;
+  border: 1px solid #b4b9bb;
 }
 
 .form-write-us input:focus,
 .form-write-us textarea:focus {
   color: #000000;
+  border: 1px solid #000000;
 }
 
 .form-write-us input:focus::placeholder,
@@ -1216,7 +1217,6 @@ button.catalog-active {
   position: absolute;
   top: 385px;
   display: none;
-  /* display: block; */
   height: 231px;
   width: 360px;
   background-color: #eeeeee;
