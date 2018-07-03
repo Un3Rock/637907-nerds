@@ -628,7 +628,7 @@ img {
 .catalog-content {
   display: flex;
   justify-content: space-between;
-  margin-bottom: -35px;
+  margin-bottom: -30px;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -712,7 +712,8 @@ input[type="radio"].visually-hidden {
 }
 
 .sort:active,
-.sort:focus {
+.sort:focus,
+.sort-active {
   opacity: 1;
 }
 
@@ -938,12 +939,19 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-
+.catalog-item {
+  width: 100%;
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 2px;
+  margin-bottom: 15px;
+}
 
 .catalog-item,
 .catalog-button {
   text-transform: uppercase;
-  padding-left: 140px;
+  /* padding-left: 100px; */
 }
 
 .catalog-items {
@@ -958,12 +966,12 @@ input[type="radio"].visually-hidden {
 
 
 .info-text {
-  width: 200px;
+  width: 230px;
   max-height: 140px;
-  min-height: 100px;
+  /* min-height: 100px; */
   overflow: auto;
-  padding:0 80px;
-  margin-top:10px;
+  padding:0 65px;
+  margin-top:14px;
   color: #666666;
   line-height: 19px;
   text-align: center;
@@ -1185,7 +1193,7 @@ button.catalog-active {
   display: block;
   width: 200px;
   margin-top: 30px;
-  margin-left: 78px;
+  margin-left: 80px;
   padding: 13px 0;
   font-size: 16px;
   color: #ffffff;
@@ -1208,9 +1216,16 @@ button.catalog-active {
   position: absolute;
   top: 385px;
   display: none;
+  /* display: block; */
   height: 231px;
   width: 360px;
   background-color: #eeeeee;
+}
+
+.popup-slide-container {
+  height: 200px;
+  margin-top: 28px;
+  text-align: center;
 }
 
 .list-element:hover .popup-slide {
@@ -1218,7 +1233,7 @@ button.catalog-active {
 }
 
 .list-elem {
-  padding-bottom: 35px;
+  padding-bottom: 34px;
 }
 
 .list-element {
@@ -1283,7 +1298,7 @@ a.arrow {
 .arrow::before {
   content: "";
   display: inline-block;
-  border: 10px solid rgba(0,0,0,0.3);
+  border: 10px solid rgba(0, 0, 0, 0.3);
   border-right-width: 5px;
   border-left-width: 5px;
   border-right-color: transparent;
@@ -1295,11 +1310,16 @@ a.arrow {
 }
 
 .arrow-down::before {
+  border: 10px solid rgba(0, 0, 0, 1);
+  border-right-width: 5px;
+  border-left-width: 5px;
+  border-right-color: transparent;
+  border-left-color: transparent;
   border-bottom-width: 0;
 }
 
 .arrow:hover::before {
-  border: 10px solid rgba(0,0,0,0.6);
+  border: 10px solid rgba(0, 0, 0, 0.6);
   border-right-width: 5px;
   border-left-width: 5px;
   border-right-color: transparent;
@@ -1316,7 +1336,7 @@ a.arrow {
 
 .arrow:active::before,
 .arrow:focus::before {
-  border: 10px solid rgba(0,0,0,1);
+  border: 10px solid rgba(0, 0, 0, 1);
   border-right-width: 5px;
   border-left-width: 5px;
   border-right-color: transparent;
@@ -1477,4 +1497,8 @@ a.arrow {
   width: 260px;
   margin-left: 15px;
   margin-top: 29px;
+}
+
+.price {
+  width: 200px;
 }

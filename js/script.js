@@ -40,18 +40,21 @@ function setActiveSlide(index) {
 
 }
 
+if (sliderControl1) {
 	sliderControl1.addEventListener("click", function (evt) {
 		setActiveSlide(1);
 		});
-
+}
+if (sliderControl1) {
 	sliderControl2.addEventListener("click", function (evt) {
 		setActiveSlide(2);
 		});
-
+}
+if (sliderControl1) {
 	sliderControl3.addEventListener("click", function (evt) {
 		setActiveSlide(3);
 		});
-
+}
 try {
   storage = localStorage.getItem("nick");
 } catch (err) {
