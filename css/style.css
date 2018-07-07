@@ -925,13 +925,14 @@ input[type="radio"].visually-hidden {
 .filter-input-radio:checked + label::after {
   content: "";
   position: absolute;
-  top: 6px;
-  left: -25px;
+  top: 8px;
+  left: -22px;
   width: 8px;
   height: 8px;
   background-color: #283136;
   border-radius: 50%;
   opacity: 0.4;
+  box-sizing: border-box;
 }
 
 .filter-input-checkbox + label::before {
