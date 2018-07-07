@@ -738,7 +738,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-left: 23px;
+  margin-left: 25px;
   list-style: none;
 }
 
@@ -1361,16 +1361,6 @@ button.catalog-active {
 /* .sorting li:nth-child(3) {
   margin-right: 18px;
 } */
-
-.arrows li:first-child {
-  margin-right: 4px;
-}
-
-a.arrow {
-  display: inline-block;
-  margin: 0 5px;
-  font-size: 0;
-}
 
 .arrow::before {
   content: "";
