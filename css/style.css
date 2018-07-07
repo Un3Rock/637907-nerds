@@ -1534,20 +1534,37 @@ a.arrow {
   margin-top: 34px;
 }
 
-.modal-block input{
+.modal-block input {
   width: 340px;
   height: 42px;
   padding-left: 16px;
   line-height: 45px;
 }
 
-.modal-block textarea{
+.modal-block textarea {
   width: 744px;
   height: 114px;
   padding-left: 16px;
   line-height: 40px;
   background-color: #ffffff;
   resize: vertical;
+}
+
+.modal-block input,
+.modal-block textarea {
+  border: 2px solid #d7dcde;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.modal-block input:hover,
+.modal-block textarea:hover {
+  border: 2px solid #b4b9bb;
+}
+
+.modal-block input:focus,
+.modal-block textarea:focus {
+  border: 2px solid #000000;
 }
 
 .send {
