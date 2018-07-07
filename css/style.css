@@ -1027,7 +1027,7 @@ input[type="radio"].visually-hidden {
   max-height: 140px;
   min-height: 39px;
   overflow: auto;
-  padding:0 65px;
+  /* padding:0 65px; */
   margin: 0 auto;
   margin-top: 14px;
   color: #666666;
