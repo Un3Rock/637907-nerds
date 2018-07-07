@@ -738,9 +738,19 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-left: 5px;
+  margin-left: 23px;
   list-style: none;
 }
+
+.arrows li:first-child {
+    margin-right: 20px;
+}
+
+a.arrow {
+  display: inline-block;
+  font-size: 0;
+}
+
 
 .sort {
   margin-right: 24px;
@@ -947,25 +957,32 @@ input[type="radio"].visually-hidden {
   background-position: center;
 }
 
-.filter-input-radio:hover,
-.filter-input-checkbox:hover {
-  opacity: 1;
+.filter-input-radio + label,
+.filter-input-checkbox + label {
+  color: #283136;
 }
 
-.filter-input-radio:disabled,
-.filter-input-checkbox:disabled {
-  opacity: 0.1;
+.filter-input-radio:disabled + label,
+.filter-input-checkbox:disabled  + label{
+	opacity: 0.3;
 }
 
-
-.filter-input-radio + label:hover,
-.filter-input-checkbox + label:hover {
-  opacity: 1;
+.filter-input-radio + label::before,
+.filter-input-radio + label::after,
+.filter-input-checkbox + label::before {
+  opacity: 0.4;
 }
 
-.filter-input-radio + label:disabled,
-.filter-input-checkbox + label:disabled {
-  opacity: 0.1;
+.filter-input-radio + label:hover::before,
+.filter-input-radio + label:hover::after,
+.filter-input-checkbox  + label:hover::before{
+	opacity: 1;
+}
+
+.filter-input-radio:disabled + label::before,
+.filter-input-radio:disabled  + label::after,
+.filter-input-checkbox:disabled  + label::before{
+	opacity: 0.1;
 }
 
 .filter-input-checkbox:checked + label::before {
