@@ -1205,7 +1205,8 @@ button.catalog-active {
 .catalog-navigation {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 23px;
+  margin-top: 26px;
+  margin-bottom: 13px;
   margin-left: -1px;
   padding: 0;
   padding-left: 0px;
