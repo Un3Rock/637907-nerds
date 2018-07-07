@@ -958,6 +958,15 @@ input[type="radio"].visually-hidden {
 }
 
 
+.filter-input-radio label:hover,
+.filter-input-checkbox label:hover {
+  opacity: 1;
+}
+
+.filter-input-radio label:disabled,
+.filter-input-checkbox label:disabled {
+  opacity: 0.1;
+}
 
 .filter-input-checkbox:checked + label::before {
   left: -33px;
