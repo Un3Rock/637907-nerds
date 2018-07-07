@@ -1082,23 +1082,6 @@ input[type="radio"].visually-hidden {
  background-color: none;
 }
 
-.form-write-us input,
-.form-write-us textarea {
-  color: #444444;
-}
-
-.form-write-us input:hover,
-.form-write-us textarea:hover {
-  color: #444444;
-  border: 1px solid #b4b9bb;
-}
-
-.form-write-us input:focus,
-.form-write-us textarea:focus {
-  color: #000000;
-  border: 1px solid #000000;
-}
-
 .form-write-us input:focus::placeholder,
 .form-write-us textarea:focus::placeholder {
   color: #444444;
@@ -1535,8 +1518,8 @@ a.arrow {
 }
 
 .modal-block input {
-  width: 340px;
-  height: 42px;
+  width: 360px;
+  height: 50px;
   padding-left: 16px;
   line-height: 45px;
 }
