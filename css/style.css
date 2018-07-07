@@ -1023,12 +1023,13 @@ input[type="radio"].visually-hidden {
 
 
 .info-text {
-  width: 230px;
+  width: 265px;
   max-height: 140px;
-  /* min-height: 100px; */
+  min-height: 39px;
   overflow: auto;
   padding:0 65px;
-  margin-top:14px;
+  margin: 0 auto;
+  margin-top: 14px;
   color: #666666;
   line-height: 19px;
   text-align: center;
