@@ -1497,7 +1497,7 @@ a.arrow {
 .write-us-frame label {
   display: block;
   font-weight: 700;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 }
 
 .container-modal {
@@ -1554,8 +1554,8 @@ a.arrow {
 
 .send {
   width: 260px;
-  margin-left: 15px;
-  margin-top: 29px;
+  margin-left: 20px;
+  margin-top: 34px;
 }
 
 .price {
