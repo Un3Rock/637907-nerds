@@ -1376,48 +1376,27 @@ button.catalog-active {
   border-top-width: 0;
 }
 
+.arrow-up.active-arrow::before {
+  border-bottom-color: rgba(0, 0, 0, 1);
+}
+
 .arrow-down::before {
-  border: 10px solid rgba(0, 0, 0, 1);
-  border-right-width: 5px;
-  border-left-width: 5px;
-  border-right-color: transparent;
-  border-left-color: transparent;
+
   border-bottom-width: 0;
 }
 
-.arrow:hover::before {
-  border: 10px solid rgba(0, 0, 0, 0.6);
-  border-right-width: 5px;
-  border-left-width: 5px;
-  border-right-color: transparent;
-  border-left-color: transparent;
+.arrow-down.active-arrow::before {
+ border-top-color: rgba(0, 0, 0, 1);
 }
 
 .arrow-up:hover::before {
-  border-top-width: 0;
+  border-bottom-color: rgba(0, 0, 0, 0.6);
+
 }
 
 .arrow-down:hover::before {
-  border-bottom-width: 0;
-}
+  border-top-color: rgba(0, 0, 0, 0.6);
 
-.arrow:active::before,
-.arrow:focus::before {
-  border: 10px solid rgba(0, 0, 0, 1);
-  border-right-width: 5px;
-  border-left-width: 5px;
-  border-right-color: transparent;
-  border-left-color: transparent;
-}
-
-.arrow-up:active::before,
-.arrow-up:focus::before {
-  border-top-width: 0;
-}
-
-.arrow-down:active::before,
-.arrow-down:focus::before {
-  border-bottom-width: 0;
 }
 
 .field {
